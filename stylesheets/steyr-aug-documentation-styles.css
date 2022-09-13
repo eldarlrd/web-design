@@ -1,0 +1,137 @@
+body {
+  font-family: Arial;
+  font-size: 17px;
+  background-color: #EEB000;
+  color: #192F19;
+}
+/* Navigation Bar Style */
+nav {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 97px;
+  height: 763px;
+  padding: 40px 120px;
+  margin: -8px 0 0 -8px;
+  border-right: 4px solid #192019;
+  background-color: #334333;
+  opacity: 96%;
+  z-index: 1;
+}
+
+#navhead {
+  color: #EEEEEE;
+}
+
+.nav-link {
+  white-space: nowrap;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #EEEEEE;
+}
+
+.nav-link:hover {
+  color: #EEB000;
+}
+
+#navbar-padding {
+  display: flex;
+  position: fixed;
+  width: 97px;
+  height: calc(100% - 923px);
+  padding: 40px 120px;
+  margin: -8px 0 0 -8px;
+  bottom: 0;
+  border-right: 4px solid #192019;
+  background-color: #334333;
+  opacity: 96%;
+  z-index: 1;
+}
+
+@media (max-width: 1420px) {
+  nav, #navbar-padding {
+    padding: 40px 80px;
+  }
+}
+
+@media (max-width: 1080px) {
+  nav, #navbar-padding {
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 720px), (max-height: 560px) {
+  main {
+    padding: 24% 6% 3vh 6% !important;
+  }
+  nav {
+    width: calc(100% - 28px);
+    height: auto !important;
+    padding: 14px;
+    border-right: 0;
+    border-radius: 0 0 10px 10px;
+  }
+  #navhead {
+    display: none;
+  }
+  .nav-link {
+    white-space: pre-wrap;
+    text-align: initial;
+  }
+  #navbar-padding {
+    visibility: hidden;
+  }
+}
+
+@media (max-height: 880px) {
+  nav {
+    height: 600px;
+  }
+  #navbar-padding {
+    height: calc(100% - 760px);
+  }
+}
+
+@media (max-height: 740px) {
+  nav {
+    height: 400px;
+  }
+  #navbar-padding {
+    height: calc(100% - 560px);
+  }
+}
+/* Documentation Style */
+main {
+  font-size: 18px;
+  padding: 2vh 20% 3vh 25%;
+}
+
+section {
+  padding: 16px;
+  margin-top: 2vh;
+  border: 3px solid #334333;
+  border-radius: 6px;
+  box-shadow: 10px 10px #192019;
+  background-color: #FFC330;
+}
+
+header:not(#navhead) {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  padding: 20px 0 10px 1px;
+}
+
+li {
+  list-style-type: square;
+  margin-left: 16px;
+}
+
+code {
+  white-space: pre-wrap;
+}

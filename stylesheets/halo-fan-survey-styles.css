@@ -1,0 +1,176 @@
+/* Horizontal Rule Style */
+#hr1 {
+  height: 20px;
+  padding: 1px;
+  margin: 0 -8px;
+  border: none;
+  background-color: #EEEEEE;
+}
+
+#hr2 {
+  height: 20px;
+  padding: 1px;
+  margin-top: 14px;
+  margin-right: -20px;
+  margin-left: -20px;
+  border: none;
+  background-color: #EEEEEE;
+}
+
+#hr3 {
+  height: 8px;
+  padding: 1px;
+  margin-top: -10px;
+  margin-right: -20px;
+  margin-left: -20px;
+  border: none;
+  background-color: #EEEEEE;
+}
+
+#hr4 {
+  height: 8px;
+  padding: 1px;
+  margin-top: -10px;
+  margin-right: -20px;
+  margin-left: -20px;
+  border: none;
+  background-color: #EEEEEE;
+}
+/* The Intro Style */
+main {
+  padding: 1px;
+  margin: -8px;
+  background-color: #841268;
+  color: #79FF99;
+}
+
+h1 {
+  font-family: Calibri;
+  font-size: 44px;
+  text-align: center;
+}
+
+p {
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+/* User Info Style */
+h2 {
+  font-family: Calibri;
+  font-size: 26px;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin: -2px -8px -16px -8px;
+  background-color: #194819;
+  color: #EE12BB;
+}
+
+#survey {
+  font-family: Calibri;
+  font-size: 20px;
+  padding: 20px;
+  margin: -8px;
+  background-color: #194819;
+  color: #EE12BB;
+}
+
+#name {
+  height: 26px;
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+#email {
+  height: 26px;
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+#number {
+  width: 130px;
+  height: 26px;
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+#dropdown {
+  width: 130px;
+  height: 26px;
+  font-family: Verdana;
+  font-size: 18px;
+}
+/* "About your playthrough" Style */
+h3 {
+  font-family: Calibri;
+  font-size: 26px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  margin: -10px -20px 0 -20px;
+  background-color: #841268;
+  color: #79FF99;
+}
+/* Difficulty Level Style */
+#survey-difficulty {
+  font-family: Calibri;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  background-color: #841268;
+  color: #79FF99;
+}
+/* Favorite Levels Style */
+#survey-levels {
+  font-family: Calibri;
+  font-size: 20px;
+  padding-top: 16px;
+  padding-left: 20px;
+  margin-top: -10px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+/* User Stories Style */
+#survey-story {
+  font-family: Calibri;
+  font-size: 20px;
+  padding-top: 16px;
+  padding-left: 20px;
+  margin-top: -10px;
+  margin-right: -20px;
+  margin-left: -20px;
+  background-color: #841268;
+  color: #79FF99;
+}
+
+#stories {
+  font-family: Verdana;
+  font-size: 18px;
+  width: 98%;
+  height: 160px;
+}
+
+@media (max-width: 610px) {
+  #stories {
+    width: 94%;
+  }
+}
+/* Submit Button Style */
+#survey-submit {
+  margin: -10px -20px -40px -20px;
+  background-color: #841268;
+  color: #79FF99;
+}
+
+#submit {
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  background-color: #194819;
+  color: #EE12BB;
+}

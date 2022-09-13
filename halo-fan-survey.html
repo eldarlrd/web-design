@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Boilerplate -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./stylesheets/halo-fan-survey-styles.css" rel="stylesheet">
+  <link href="./stylesheets/camp.ico" rel="icon">
+  <title>Halo Fan Survey</title>
+</head>
+<!-- The Intro -->
+<body>
+  <main>
+    <h1 id="title">Halo: Combat Evolved Fan Survey 2022</h1>
+    <p id="description">Tell us about your favorite levels, your incredible feats and stories you had with your friends!</p>
+  </main>
+  <hr id="hr1">
+<!-- User Info -->
+<h2>About yourself</h2>
+<div id="survey">
+  <form id="survey-form">
+    <label for="name" id="name-label">Full Name:</label>
+    <br>
+      <input id="name" type="text" placeholder="John Smith" required>
+    <br>
+    <label for="email" id="email-label">Email:</label>
+    <br>
+      <input id="email" type="email" placeholder="johnsmith@mail.com" required>
+    <br>
+    <label for="number" id="number-label">Age:</label>
+    <br>
+      <input id="number" type="number" placeholder="21" min="16" max="120">
+    <br>
+    <label for="dropdown" id="dropdown-label">Gender:</label>
+    <br>
+      <select id="dropdown">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="nonb">Non-binary</option>
+      </select>
+    <hr id="hr2">
+<!-- Difficulty Level -->
+  <h3>About your playthrough</h3> 
+  <div id="survey-difficulty">
+    <label for="difficulty" id="difficulty-label"><strong>The Difficulty level played at:</strong></label>
+    <br>
+      <input id="difficulty" type="radio" name="difficulty" value="easy"> Easy
+    <br>
+      <input id="difficulty" type="radio" name="difficulty" value="normal"> Normal
+    <br>
+      <input id="difficulty" type="radio" name="difficulty" value="heroic"> Heroic
+    <br>
+      <input id="difficulty" type="radio" name="difficulty" value="legendary"> Legendary
+    <br><br>
+  </div>
+    <hr id="hr3">
+<!-- Favorite Levels -->
+  <div id="survey-levels">
+    <label for="favlevel" id="favlevel-label"><strong>Your favorite levels:</strong></label>
+    <br>
+      <input id="favlevel" type="checkbox" value="pillar"> The Pillar of Autumn
+    <br>
+      <input id="favlevel" type="checkbox" value="halo"> Halo
+    <br>
+      <input id="favlevel" type="checkbox" value="truth"> The Truth and Reconciliation
+    <br>
+      <input id="favlevel" type="checkbox" value="silent"> The Silent Cartographer
+    <br>
+      <input id="favlevel" type="checkbox" value="control"> Assault on the Control Room
+    <br>
+      <input id="favlevel" type="checkbox" value="343"> 343 Guilty Spark
+    <br>
+      <input id="favlevel" type="checkbox" value="library"> The Library
+    <br>
+      <input id="favlevel" type="checkbox" value="betrayals"> Two Betrayals
+    <br>
+      <input id="favlevel" type="checkbox" value="keyes"> Keyes
+    <br>
+      <input id="favlevel" type="checkbox" value="maw"> The Maw
+    <br><br>
+  </div>
+    <hr id="hr4">
+<!-- User Stories -->
+  <div id="survey-story">
+    <label for="stories" id="stories-label"><strong>Your stories to share:</strong></label>
+    <br>
+      <textarea id="stories" placeholder="I did a crazy grenade jump..."></textarea>
+  </div>
+<!-- Submit Button -->
+  <div id="survey-submit">
+    <label for="submit" id="submit-label"></label>
+    <br><br>
+      <input id="submit" type="submit" value="Submit!">
+  </div>
+  </form>
+</div>
+</body>
+
+</html>

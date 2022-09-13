@@ -1,0 +1,74 @@
+body {
+  font-family: "Times New Roman";
+  background-color: #CC0040;
+  color: #FFFFFF;
+}
+/* The Intro Style */
+h1 {
+  font-size: 46px;
+  text-align: center;
+}
+
+#description {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+/* Image Style */
+#img-div {
+  width: 550px;
+  height: 500px;
+  margin: auto auto -10% auto;
+  border-top: 6px solid #FFFFFF;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+#img-caption {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 6px solid #FFFFFF;
+}
+
+@media (max-width: 720px) {
+  #img-div {
+    width: 350px;
+    height: 318px;
+  }
+}
+/* Tribute Text Style */
+#tribute-text {
+  display: block;
+  text-align: center;
+  margin: 10% auto auto auto;
+}
+
+#tribute-info, #modern-titles, #tribute-link-text {
+  font-size: 24px;
+}
+
+#games-list {
+  white-space: pre-wrap;
+  font-size: 22px;
+}
+
+#bar {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #000000;
+}

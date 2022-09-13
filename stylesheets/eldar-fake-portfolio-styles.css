@@ -1,0 +1,187 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Tahoma;
+  background-color: #202236;
+  color: #EEEEEE;
+}
+/* Navigation Bar Style */
+#navbar-head {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  height: 44px;
+  padding: 10px;
+  margin: -8px 0 0 -8px;
+  top: 8px;
+  border-radius: 0 0 10px 10px;
+  background-color: #101226;
+  opacity: 96%;
+  z-index: 1;
+}
+
+#nav-link-span {
+  word-spacing: 120px;
+  margin-top: 8px;
+}
+
+.nav-link {
+  white-space: pre;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  word-spacing: 0;
+  color: #9470FC;
+}
+
+a:hover, .project > a:hover, #show-all:hover, #profile-link:hover, #profile-link-fcc:hover {
+  color: #00BA50;
+}
+
+a:not(.nav-link, #welcome-section > h2 > a, #profile-link, #profile-link-fcc):hover,
+.project > a:hover, #show-all:hover {
+  background-color: #0B0C1A;
+}
+
+@media (max-width: 720px) {
+  #nav-link-span {
+    word-spacing: 10px;
+  }
+}
+/* Welcome Style */
+div {
+  text-align: center;
+  margin-top: 120px;
+}
+
+h1 > span {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: normal;
+  width: 85%;
+  margin: auto;
+}
+
+h2 > a {
+  text-decoration: none;
+  color: #9470FC;
+}
+
+hr {
+  width: 65%;
+  height: 4px;
+  padding: 1px;
+  margin: 65px auto -45px auto;
+  border: none;
+  background-color: #EEEEEE;
+}
+/* Projects Style */
+#projects-head {
+  font-size: 23px;
+  margin-bottom: -60px;
+}
+
+#projects-head > span {
+  color: #9470FC;
+}
+
+.project-tile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project {
+  width: 340px;
+  padding: 10px 20px;
+  margin: 20px;
+  border: 2px solid #EEEEEE;
+  border-radius: 6px;
+}
+
+#halo-fan-survey-tile > a, #steyr-aug-documentation-tile > a {
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+
+.project-name {
+  font-size: 21px;
+  color: #9470FC;
+}
+
+.project > p {
+  font-size: 19px;
+}
+
+.project > a, #show-all {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 140px;
+  padding: 10px 14px;
+  margin: 1vh auto;
+  border-radius: 20px;
+  background-color: #101226;
+  color: #9470FC;
+}
+
+.site-link {
+  background-color: #594297 !important;
+  color: #0B0C1A !important;
+}
+
+.site-link:hover {
+  background-color: #4A377D !important;
+  color: #00C857 !important;
+}
+
+#show-all {
+  margin: 5vh auto 9vh auto !important;
+}
+/* Contact Me Style */
+#contact-me {
+  margin-bottom: 80px;
+}
+
+#contact-head {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+#contact-me > a {
+  display: inline-block;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5vh 4vw;
+  color: #9470FC;
+}
+
+#github-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  filter: brightness(6);
+}
+
+#fcc-logo {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  filter: grayscale(1) brightness(46);
+}
