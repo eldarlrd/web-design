@@ -16,9 +16,9 @@ h1 {
 }
 /* Image Style */
 #img-div {
-  width: 550px;
-  height: 500px;
-  margin: auto auto -10% auto;
+  width: 350px;
+  height: 318px;
+  margin: auto auto 10rem auto;
   border-top: 6px solid #FFFFFF;
 }
 
@@ -40,8 +40,8 @@ h1 {
 
 @media (max-width: 720px) {
   #img-div {
-    width: 350px;
-    height: 318px;
+    width: 223px;
+    height: 202px;
   }
 }
 /* Tribute Text Style */
