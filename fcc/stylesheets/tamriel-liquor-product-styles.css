@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "New Century Schoolbook";
-  background-color: #EEEEEE;
+  background: #EEE;
   color: #595959;
 }
 /* Navigation Bar Style */
@@ -18,7 +18,7 @@ nav {
   padding: 10px;
   margin: -8px 0 0 -8px;
   top: 8px;
-  background-color: #303039;
+  background: #303039;
   opacity: 96%;
   z-index: 1;
 }
@@ -40,7 +40,7 @@ nav > span > p {
   font-weight: bold;
   padding-left: 20px;
   margin-top: 12px;
-  color: #DDDDDD;
+  color: #DDD;
 }
 
 #nav-link-span {
@@ -125,7 +125,7 @@ h1 {
   margin: 30px auto;
   border: 1px solid #808080;
   border-radius: 10px;
-  background-color: #F4F4F4;
+  background: #F4F4F4;
 }
 
 quote {
@@ -152,7 +152,7 @@ h2 {
   margin: 20px;
   border: 3px solid #808080;
   border-radius: 6px;
-  background-color: #EFEDE6;
+  background: #EFEDE6;
 }
 
 .product-img {
@@ -166,18 +166,19 @@ h2 {
 }
 
 button {
+  outline: none;
   font-size: 16px;
   font-weight: bold;
   padding: 8px 24px;
   margin-bottom: 6px;
   border-radius: 4px;
-  background-color: #C27A36;
+  background: #C27A36;
   color: #303039;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #D28A36;
+  background: #D28A36;
 }
 /* Get Notified Style */
 #get-notified {
@@ -185,7 +186,7 @@ button:hover {
   margin: 60px auto 30px auto;
   border: 3px solid #808080;
   border-radius: 6px;
-  background-color: #E4E4E4;
+  background: #E4E4E4;
 }
 
 #interesting-products {
@@ -208,11 +209,11 @@ button:hover {
   padding: 2px 6px;
   margin-bottom: 10px;
   border-radius: 4px;
-  background-color: #303039;
+  background: #303039;
   color: #C27A36;
 }
 
 #submit:hover {
   cursor: pointer;
-  background-color: #3C3C48;
+  background: #3C3C48;
 }

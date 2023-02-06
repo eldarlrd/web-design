@@ -1,7 +1,7 @@
 body {
   font-family: Arial;
   font-size: 17px;
-  background-color: #EEB000;
+  background: #EEB000;
   color: #192F19;
 }
 /* Navigation Bar Style */
@@ -15,13 +15,13 @@ nav {
   padding: 40px 120px;
   margin: -8px 0 0 -8px;
   border-right: 4px solid #192019;
-  background-color: #334333;
+  background: #334333;
   opacity: 96%;
   z-index: 1;
 }
 
 #navhead {
-  color: #EEEEEE;
+  color: #EEE;
 }
 
 .nav-link {
@@ -29,7 +29,7 @@ nav {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  color: #EEEEEE;
+  color: #EEE;
 }
 
 .nav-link:hover {
@@ -45,7 +45,7 @@ nav {
   margin: -8px 0 0 -8px;
   bottom: 0;
   border-right: 4px solid #192019;
-  background-color: #334333;
+  background: #334333;
   opacity: 96%;
   z-index: 1;
 }
@@ -114,7 +114,7 @@ section {
   border: 3px solid #334333;
   border-radius: 6px;
   box-shadow: 10px 10px #192019;
-  background-color: #FFC330;
+  background: #FFC330;
 }
 
 header:not(#navhead) {

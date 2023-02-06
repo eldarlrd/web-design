@@ -1,0 +1,87 @@
+@font-face {
+  font-family: GreatVibes;
+  src: url(../assets/GreatVibes.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: GreatVibes, serif;
+  text-align: center;
+  background: #E0C9A6;
+}
+
+a {
+  font-weight: bold;
+  color: inherit;
+}
+a:hover {
+  color: chocolate;
+}
+/* Header */
+header {
+  margin-top: 3em;
+  line-height: 1em;
+}
+
+header > img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 2px solid snow;
+  background: sandybrown;
+}
+/* Nav */
+nav > a {
+  font-size: 22px;
+  display: block;
+  width: fit-content;
+  margin: 3em auto;
+}
+/* Main */
+main {
+  margin-top: 3em;
+}
+
+main > img {
+  width: 21em;
+  height: 14em;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+main > a {
+  font-size: 22px;
+}
+
+summary {
+  margin-top: 1em;
+  font-size: 24px;
+}
+
+ul, ol {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 2em 2em 2em auto;
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  list-style-position: inside;
+  font-weight: normal;
+  margin-top: 1em;
+}
+li::marker {
+  font-weight: bold;
+}
+/* Footer */
+footer {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2em auto;
+}
