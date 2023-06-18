@@ -18,9 +18,11 @@ nav {
   position: fixed;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   width: 75%;
-  height: 44px;
+  height: fit-content;
   padding: 10px;
+  padding-bottom: 1rem;
   margin: -8px 0 0 -8px;
   top: 8px;
   border-radius: 0 0 10px 10px;
