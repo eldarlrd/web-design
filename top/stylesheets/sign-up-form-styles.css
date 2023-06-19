@@ -1,0 +1,17 @@
+@font-face {
+  font-family: SanguisNoctis;
+  src: url(../assets/fonts/SanguisNoctis.ttf);
+  font-display: swap;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: SanguisNoctis, Garamond, Georgia, serif;
+}
+
+header {
+  text-align: center;
+}
