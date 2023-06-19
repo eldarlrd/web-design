@@ -10,7 +10,7 @@
   <link rel='stylesheet' href='stylesheets/sign-up-form-styles.css'>
   <title>Spooky Sign Up Form</title>
   <script>
-    // setInterval(() => location.reload(), 1000)
+    // setInterval(() => location.reload(), 1000);
   </script>
 </head>
 
@@ -49,6 +49,7 @@
         minlength='2'
         maxlength='16'
         pattern='[a-zA-Z]+'
+        placeholder='Stephen'
         required
       >
     </span>
@@ -60,29 +61,55 @@
         minlength='2'
         maxlength='16'
         pattern='[a-zA-Z]+'
+        placeholder='King'
         required
       >
     </span>
     <span>
       <label for='email'>Email</label>
-      <input name='email' type='email'>
+      <input
+        name='email'
+        type='email'
+        maxlength='64'
+        placeholder='stephenking@mail.com'
+        required
+      >
     </span>
     <span>
       <label for='phone'>Phone Number</label>
       <input
         name='phone'
         type='tel'
+        minlength='9'
+        maxlength='18'
         pattern='^(\+?\d{1,3}\s?)?(\(\d{2,3}\)|\d{2,3})[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$'
+        placeholder='+1 800-555-0100'
         required
       >
     </span>
     <span>
       <label for='password'>Password</label>
-      <input name='password' type='password'>
+      <input
+        name='password'
+        type='password'
+        minlength='8'
+        maxlength='32'
+        pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*-_=+?]).{8,32}$'
+        autocomplete='current-password'
+        required
+      >
     </span>
     <span>
       <label for='repeat-password'>Repeat Password</label>
-      <input name='repeat-password' type='password'>
+      <input
+        name='repeat-password'
+        type='password'
+        minlength='8'
+        maxlength='32'
+        pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*-_=+?]).{8,32}$'
+        autocomplete='current-password'
+        required
+      >
     </span>
   </main>
 
