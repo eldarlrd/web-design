@@ -10,17 +10,23 @@
   <link rel='stylesheet' href='stylesheets/sign-up-form-styles.css'>
   <title>Spooky Sign Up Form</title>
   <script>
-    setInterval(() => location.reload(), 1000)
+    // setInterval(() => location.reload(), 1000)
   </script>
 </head>
 
 <body>
-  <section>
-    <img>
+  <aside>
+    <img
+      alt='Graveyard'
+      src='assets/backgrounds/graveyard.jpg'
+    >
     <div>
-      <img>
+      <img
+        alt='Pumpkin'
+        src='assets/logos/pumpkin-face.png'
+      >
     </div>
-  </section>
+  </aside>
 
   <header>
     <h1>Spooky Sign Up Form</h1>
@@ -33,14 +39,29 @@
     <p>Go ahead but don't say we didn't warn you!</p>
   </header>
 
+  <form>
   <main>
     <span>
       <label for='first-name'>First Name</label>
-      <input name='first-name' type='text'>
+      <input
+        name='first-name'
+        type='text'
+        minlength='2'
+        maxlength='16'
+        pattern='[a-zA-Z]+'
+        required
+      >
     </span>
     <span>
       <label for='last-name'>Last Name</label>
-      <input name='last-name' type='text'>
+      <input
+        name='last-name'
+        type='text'
+        minlength='2'
+        maxlength='16'
+        pattern='[a-zA-Z]+'
+        required
+      >
     </span>
     <span>
       <label for='email'>Email</label>
@@ -48,7 +69,12 @@
     </span>
     <span>
       <label for='phone'>Phone Number</label>
-      <input name='phone' type='tel'>
+      <input
+        name='phone'
+        type='tel'
+        pattern='^(\+?\d{1,3}\s?)?(\(\d{2,3}\)|\d{2,3})[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$'
+        required
+      >
     </span>
     <span>
       <label for='password'>Password</label>
@@ -60,12 +86,28 @@
     </span>
   </main>
 
-  <footer>
+  <section>
     <input type='submit' value='Sacrifice'>
     <span>
       <p>Already offered a sacrifice?</p>
       <a>Redeem</a>
     </span>
+  </section>
+  </form>
+
+  <footer>
+    <p>For <a href='https://theodinproject.com'
+              target='_blank'
+              rel='noreferrer'>
+              The Odin Project
+           </a>
+    </p>
+    <p>by <a href='https://github.com/eldarlrd'
+             target='_blank'
+             rel='noreferrer'>
+             eldarlrd
+          </a>
+    </p>
   </footer>
 </body>
 
