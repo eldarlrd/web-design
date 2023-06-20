@@ -6,39 +6,96 @@
 
 :root {
   scroll-behavior: smooth;
+  --pumpkin: 255, 117, 24;
+  --dim-white: #E8E8E8;
+  --serif: Garamond, Georgia, serif;
 }
 
 body {
-  font-family: SanguisNoctis, Garamond, Georgia, serif;
-  background-color: #282828;
-  color: #E8E8E8;
+  font-family: SanguisNoctis, var(--serif);
+  background-color: #111;
+  color: var(--dim-white);
   margin: 0;
 }
-
-header {
-  text-align: center;
-}
-
+/* Banner */
 aside {
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid rgb(var(--pumpkin));
 }
 
 aside > img {
-  width: 100%;
+  width: 100vw;
   height: 20em;
 }
 
 aside > div {
   position: absolute;
-  background-color: #FF7518CF;
+  background-color: rgba(var(--pumpkin), .8);
   text-align: center;
   top: 5.5em;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
 }
 
 aside > div > img {
   width: 9em;
   height: 9em;
+}
+/* Intro */
+header {
+  text-align: center;
+  margin: 3em 1em;
+}
+
+header > h1 {
+  color: rgb(var(--pumpkin));
+}
+
+header > p {
+  font-size: 1.25em;
+}
+/* Form */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding: 3em 0;
+  border-top: 2px solid rgb(var(--pumpkin));
+}
+
+main > span {
+  display: inherit;
+  flex-direction: column;
+  gap: .625em;
+}
+
+main > span > label {
+  color: rgb(var(--pumpkin));
+  font-size: 1.1em;
+}
+
+main > span > input {
+  background-color: var(--dim-white);
+  border: 0;
+  border-radius: .2em;
+  padding: .5em;
+  font: bold .8em var(--serif);
+}
+
+main > span > input::placeholder {
+  font-weight: normal;
+  font-size: .9rem;
+}
+/* Submit */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > input {
+  outline: none;
+  border: 0;
 }
