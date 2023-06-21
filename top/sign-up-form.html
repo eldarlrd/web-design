@@ -10,24 +10,23 @@
   <link rel='stylesheet' href='stylesheets/sign-up-form-styles.css'>
   <title>Spooky Sign Up Form</title>
   <script>
-    setInterval(() => location.reload(), 1000);
+    // setInterval(() => location.reload(), 1000);
   </script>
 </head>
 
 <body>
-  <aside>
-    <img
-      alt='Graveyard'
-      src='assets/backgrounds/graveyard.jpg'
-    >
-    <div>
-      <img
-        alt='Pumpkin'
-        src='assets/logos/pumpkin-face.png'
-      >
-    </div>
-  </aside>
+  <div id='banner'>
+    <aside>
+      <div>
+        <img
+          alt='Pumpkin'
+          src='assets/logos/pumpkin-face.png'
+        >
+      </div>
+    </aside>
+  </div>
 
+  <div id='content'>
   <header>
     <h1>Spooky Sign Up Form</h1>
     <h2>Once you sign up, there's no going back...</h2>
@@ -123,6 +122,7 @@
   </form>
 
   <footer>
+    <img src='assets/icons/skull.svg' alt='Skull'>
     <p>by <a href='https://github.com/eldarlrd'
              target='_blank'
              rel='noreferrer'>
@@ -130,6 +130,7 @@
           </a>
     </p>
   </footer>
+  </div>
 </body>
 
 </html>
