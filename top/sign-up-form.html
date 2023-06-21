@@ -9,9 +9,6 @@
   <link rel='icon' href='assets/favicons/pumpkin.png'>
   <link rel='stylesheet' href='stylesheets/sign-up-form-styles.css'>
   <title>Spooky Sign Up Form</title>
-  <script>
-    // setInterval(() => location.reload(), 1000);
-  </script>
 </head>
 
 <body>
@@ -89,11 +86,12 @@
     <span>
       <label for='password'>Password</label>
       <input
+        id='pass'
         name='password'
         type='password'
         minlength='8'
         maxlength='32'
-        pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*-_=+?]).{8,32}$'
+        pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?|^*_=+-]).{8,32}$'
         autocomplete='current-password'
         required
       >
@@ -101,19 +99,21 @@
     <span>
       <label for='repeat-password'>Repeat Password</label>
       <input
+        id='repeat'
         name='repeat-password'
         type='password'
         minlength='8'
         maxlength='32'
-        pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*-_=+?]).{8,32}$'
+        pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?|^*_=+-]).{8,32}$'
         autocomplete='current-password'
         required
       >
+      <p id='error'>Passwords do not match</p>
     </span>
   </main>
 
   <section>
-    <input type='submit' value='Sacrifice'>
+    <input id='submit' type='submit' value='Sacrifice'>
     <span>
       <p>Already offered a sacrifice?</p>
       <a>Redeem</a>
@@ -133,4 +133,28 @@
   </div>
 </body>
 
+<script>
+  const passwordInput = document.getElementById('pass');
+  const repeatInput = document.getElementById('repeat');
+  const error = document.getElementById('error');
+  const submit = document.getElementById('submit');
+
+  const matchSuccess = () => {
+    submit.disabled = false;
+    error.classList.remove('visible');
+    repeatInput.classList.remove('error-border');
+  }
+  const matchFail = () => {
+    submit.disabled = true;
+    error.classList.add('visible');
+    repeatInput.classList.add('error-border');
+  }
+  const passCheck = () => {
+    passwordInput.value === repeatInput.value
+      ? matchSuccess()
+      : matchFail()
+  }
+
+  repeatInput.addEventListener('input', passCheck);
+</script>
 </html>
