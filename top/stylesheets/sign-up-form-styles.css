@@ -106,6 +106,7 @@ main > span > input {
   font: bold .9em var(--sans-serif);
   box-shadow: 0 0 2px var(--dim-white);
   width: 13em;
+  transition: .1s;
 }
 
 main > span > input::placeholder {
@@ -163,6 +164,7 @@ section {
   font-weight: bold;
   letter-spacing: .125em;
   padding: .75em 1.5em;
+  transition: .1s;
 }
 
 #submit:hover {
@@ -202,6 +204,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(var(--pumpkin));
+  transition: .1s;
 }
 
 a:hover {
