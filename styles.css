@@ -1,18 +1,21 @@
-html {
+:root {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  font-family: Tahoma;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter';
   background: #1B1B32;
   color: #EEE;
 }
-/* Navbar Style */
-#navbar-head {
-  display: flex;
-  justify-content: center;
-}
-
+/* Navbar */
 nav {
   display: flex;
   position: fixed;
@@ -54,19 +57,7 @@ a:not(.nav-link, #welcome-section > h2 > a, #profile-link, #profile-link-fcc):ho
 .project > a:hover, #show-all:hover {
   background: #0B0C1A;
 }
-
-@media (max-width: 768px) {
-  #nav-link-span {
-    word-spacing: 8px;
-  }
-}
-
-@media (max-width: 576px) {
-  nav {
-    width: 84%;
-  }
-}
-/* Welcome Style */
+/* Welcome */
 div {
   text-align: center;
   margin-top: 120px;
@@ -263,18 +254,4 @@ hr {
   text-decoration: none;
   margin: 5vh 4vw;
   color: #9470FC;
-}
-
-#github-logo {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  filter: brightness(6);
-}
-
-#fcc-logo {
-  width: 30px;
-  height: 20px;
-  margin-right: 10px;
-  filter: grayscale(1) brightness(80);
 }
