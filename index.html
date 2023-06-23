@@ -10,16 +10,23 @@
   <link rel='stylesheet' href='styles.css'>
   <link rel='icon' href='favicon.ico'>
   <title>Web Design Compendium</title>
+  <script>
+    // setTimeout(() => location.reload(), 1000);
+  </script>
 </head>
 
 <body>
   <nav id='navbar'>
     <a href='#welcome-section'>Welcome</a>
-    <a href='#projects'>Projects</a>
+    <a href='#projects-divider'>Projects</a>
     <a href='#contact'>Contact</a>
   </nav>
 
   <header id='welcome-section'>
+    <img
+      src='https://avatars.githubusercontent.com/u/95304986?v=4'
+      alt='GitHub Profile Avatar'
+    >
     <h1>
       Hi! I'm Eldar,
       <em>a junior front end developer.</em>
@@ -29,21 +36,21 @@
       through several courses on Web Design.
     </h2>
   </header>
-  <hr>
 
-  <main id='projects'>
+  <hr id='projects-divider'>
+  <main class='feat' id='projects'>
     <h2>
       These are projects I made for the course at
       <a
         href='https://freecodecamp.org/learn'
         target='_blank'
         rel='noreferrer'>
-        freeCodeCamp.
+        freeCodeCamp
       </a>
     </h2>
 
     <div>
-      <section class='project-tile'>
+      <section class='project-tile fcc'>
         <header>
           <h3>Halo Fan Survey</h3>
           <p>
@@ -59,7 +66,7 @@
             rel='noreferrer'>
             Show Site
           </a>
-          <span class='source-links'>
+          <span class='source-links fcc'>
             <a
               href='https://github.com/eldarlrd/web-design/blob/main/fcc/halo-fan-survey.html'
               target='_blank'
@@ -76,7 +83,7 @@
         </main>
       </section>
 
-      <section class='project-tile'>
+      <section class='project-tile fcc'>
         <header>
           <h3>Jesper Kyd: The Composer</h3>
           <p>
@@ -91,7 +98,7 @@
             rel='noreferrer'>
             Show Site
           </a>
-          <span class='source-links'>
+          <span class='source-links fcc'>
             <a
               href='https://github.com/eldarlrd/web-design/blob/main/fcc/jesper-kyd-tribute.html'
               target='_blank'
@@ -108,7 +115,7 @@
         </main>
       </section>
 
-      <section class='project-tile'>
+      <section class='project-tile fcc'>
         <header>
           <h3>Steyr AUG Documentation</h3>
           <p>
@@ -125,7 +132,7 @@
             rel='noreferrer'>
             Show Site
           </a>
-          <span class='source-links'>
+          <span class='source-links fcc'>
             <a
               href='https://github.com/eldarlrd/web-design/blob/main/fcc/steyr-aug-documentation.html'
               target='_blank'
@@ -142,7 +149,7 @@
         </main>
       </section>
 
-      <section class='project-tile'>
+      <section class='project-tile fcc'>
         <header>
           <h3>The Tamriel Liquor</h3>
           <p>
@@ -159,7 +166,7 @@
             rel='noreferrer'>
             Show Site
           </a>
-          <span class='source-links'>
+          <span class='source-links fcc'>
             <a
               href='https://github.com/eldarlrd/web-design/blob/main/fcc/tamriel-liquor-product.html'
               target='_blank'
@@ -176,7 +183,7 @@
         </main>
       </section>
 
-      <section class='project-tile'>
+      <section class='project-tile fcc'>
         <header>
           <h3>Web Design Compendium</h3>
           <p>
@@ -186,7 +193,7 @@
         </header>
         <main>
           <a href=''>Refresh</a>
-          <span class='source-links'>
+          <span class='source-links fcc'>
             <a
               href='https://github.com/eldarlrd/web-design/blob/main/index.html'
               target='_blank'
@@ -212,7 +219,7 @@
     </a>
   </main>
 
-  <main id='projects-top'>
+  <main class='feat' id='projects-top'>
     <h2>
       I've taken an extra course at
       <a
@@ -361,7 +368,7 @@
     </a>
   </main>
 
-  <hr>
+  <hr id='contact'>
   <footer>
     <h1>Contact Me</h1>
     <a
@@ -369,7 +376,7 @@
       href='https://github.com/eldarlrd'
       target='_blank'
       rel='noreferrer'>
-      <i class=fa-brands fa-github></i>
+      <i class='fa-brands fa-github'></i>
       GitHub
     </a>
     <a
