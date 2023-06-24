@@ -253,13 +253,6 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-width: 30em) {
-  footer {
-    height: 25vh;
-    margin-bottom: 10em;
-  }
-}
-
 footer > h1 {
   margin-bottom: 1em;
 }
@@ -269,4 +262,15 @@ footer > a {
   font-size: 1.375em;
   color: inherit;
   margin: 1em 2em;
+}
+
+@media only screen and (min-width: 30em) {
+  #welcome-section > img {
+    margin-top: 3em;
+  }
+
+  footer {
+    height: 25vh;
+    margin-bottom: 10em;
+  }
 }
