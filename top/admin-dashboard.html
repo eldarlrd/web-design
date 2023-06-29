@@ -21,7 +21,7 @@
 
 <body>
   <div class='d-flex flex-lg-row flex-column min-vh-100'>
-    <nav class='navbar border-bottom border-end align-items-start'>
+    <nav class='navbar border-bottom align-items-start'>
       <div class='navbar-expand-lg flex-lg-column container-fluid justify-content-start align-items-start gap-3'>
         <button class='navbar-toggler' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation'>
           <span class='navbar-toggler-icon'></span>
@@ -41,7 +41,7 @@
           <div class='offcanvas-body flex-lg-column'>
             <form class='d-flex mb-3' role='search'>
               <input class='form-control me-2' type='search' placeholder='Search' aria-label='Search'>
-              <button class='btn btn-outline-primary' type='submit'>
+              <button title='Find' class='btn btn-outline-primary' type='submit'>
                 <i class='bi bi-search'></i>
               </button>
             </form>
@@ -109,7 +109,7 @@
     <div class='w-100 bg-light'>
       <header class='d-flex flex-column flex-md-row-reverse justify-content-sm-between align-items-center gap-3 bg-primary px-4 py-3'>
         <section class='d-flex justify-content-center justify-content-sm-end align-items-center gap-3 fs-5'>
-          <a href='#'><i class='bi bi-bell text-white'></i></a>
+          <a href='#' title='Notifications' class='link-light'><i class='bi bi-bell'></i></a>
           <img
             width='42'
             height='42'
@@ -139,8 +139,8 @@
           <strong id='projects-header' class='fs-4'>
             Your Projects
           </strong>
-          <div class='row grid gap-3 mt-3'>
-            <div class='card rounded-3'>
+          <div class='row grid gap-3 my-3'>
+            <div class='card shadow-sm rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #1</h5>
                 <p class='card-text'>
@@ -149,16 +149,16 @@
                   Below are the different actions one could take.
                 </p>
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
-                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
                   </span>
                 </span>
               </div>
             </div>
 
-            <div class='card rounded-3'>
+            <div class='card shadow-sm rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #2</h5>
                 <p class='card-text'>
@@ -167,16 +167,16 @@
                   Below are the different actions one could take.
                 </p>
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
-                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
                   </span>
                 </span>
               </div>
             </div>
 
-            <div class='card rounded-3'>
+            <div class='card shadow-sm rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #3</h5>
                 <p class='card-text'>
@@ -185,16 +185,16 @@
                   Below are the different actions one could take.
                 </p>
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
-                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
                   </span>
                 </span>
               </div>
             </div>
 
-            <div class='card rounded-3'>
+            <div class='card shadow-sm rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #4</h5>
                 <p class='card-text'>
@@ -203,16 +203,16 @@
                   Below are the different actions one could take.
                 </p>
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
-                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
                   </span>
                 </span>
               </div>
             </div>
 
-            <div class='card rounded-3'>
+            <div class='card shadow-sm rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #5</h5>
                 <p class='card-text'>
@@ -221,16 +221,16 @@
                   Below are the different actions one could take.
                 </p>
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
-                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
                   </span>
                 </span>
               </div>
             </div>
 
-            <div class='card rounded-3'>
+            <div class='card shadow-sm rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #6</h5>
                 <p class='card-text'>
@@ -239,9 +239,9 @@
                   Below are the different actions one could take.
                 </p>
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
-                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
                   </span>
                 </span>
@@ -250,12 +250,106 @@
           </div>
         </div>
 
-        <div class='col-xl-4 bg-success'>
+        <div class='col-xl-4'>
           <div>
-            Announcements
+            <strong class='fs-4'>
+              Announcements
+            </strong>
+            <ul class='list-group my-3 shadow-sm rounded-3'>
+              <li class='list-group-item py-3'>
+                <h6>Incoming Additions</h6>
+                <span class='subtext'>
+                  Here would be latest news,
+                  announcements of the site,
+                  and their respective summaries.
+                </span>
+              </li>
+              <li class='list-group-item py-3'>
+                <h6>Updated Policy</h6>
+                <span class='subtext'>
+                  Here would be latest news,
+                  announcements of the site,
+                  and their respective summaries.
+                </span>
+              </li>
+              <li class='list-group-item py-3'>
+                <h6>Latest Tasks</h6>
+                <span class='subtext'>
+                  Here would be latest news,
+                  announcements of the site,
+                  and their respective summaries.
+                </span>
+              </li>
+            </ul>
           </div>
+
+
           <div>
-            Trending
+            <strong class='fs-4'>
+              Trending
+            </strong>
+            <ul class='list-group my-3 shadow-sm rounded-3 border'>
+              <li class='list-group-item py-3 border-0 d-flex gap-3'>
+                <img
+                  width='42'
+                  height='42'
+                  class='rounded-circle text-white border'
+                  src='https://avatars.githubusercontent.com/u/87971131?v=4?v=4'
+                  alt='GitHub Profile Avatar'
+                >
+                <span>
+                  <h6 class='mb-0'>@elnurxo</h6>
+                  <span class='subtext ms-1'>
+                    Front End Instructor
+                  </span>
+                </span>
+              </li>
+              <li class='list-group-item py-3 border-0 d-flex gap-3'>
+                <img
+                  width='42'
+                  height='42'
+                  class='rounded-circle text-white border'
+                  src='https://avatars.githubusercontent.com/u/60513066?v=4'
+                  alt='GitHub Profile Avatar'
+                >
+                <span>
+                  <h6 class='mb-0'>@nasirmovlamov</h6>
+                  <span class='subtext ms-1'>
+                    Full Stack Developer
+                  </span>
+                </span>
+              </li>
+              <li class='list-group-item py-3 border-0 d-flex gap-3'>
+                <img
+                  width='42'
+                  height='42'
+                  class='rounded-circle text-white border'
+                  src='https://avatars.githubusercontent.com/u/75661562?v=4'
+                  alt='GitHub Profile Avatar'
+                >
+                <span>
+                  <h6 class='mb-0'>@turalshkrov</h6>
+                  <span class='subtext ms-1'>
+                    Front End Developer
+                  </span>
+                </span>
+              </li>
+              <li class='list-group-item py-3 border-0 d-flex gap-3'>
+                <img
+                  width='42'
+                  height='42'
+                  class='rounded-circle text-white border'
+                  src='https://avatars.githubusercontent.com/u/66476643?v=4'
+                  alt='GitHub Profile Avatar'
+                >
+                <span>
+                  <h6 class='mb-0'>@mammadyahyayev</h6>
+                  <span class='subtext ms-1'>
+                    Back End Developer
+                  </span>
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -7,6 +7,10 @@
   border-left: .45rem solid #0D6EFD;
 }
 
+.subtext {
+  font-size: .875em;
+}
+
 @media only screen and (min-width: 36rem) {
   .card {
     max-width: calc(50% - 1rem);
