@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <div class='d-flex flex-lg-row flex-column'>
+  <div class='d-flex flex-lg-row flex-column min-vh-100'>
     <nav class='navbar border-bottom border-end align-items-start'>
       <div class='navbar-expand-lg flex-lg-column container-fluid justify-content-start align-items-start gap-3'>
         <button class='navbar-toggler' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation'>
@@ -106,7 +106,7 @@
       </div>
     </nav>
 
-    <div class='w-100'>
+    <div class='w-100 bg-light'>
       <header class='d-flex flex-column flex-md-row-reverse justify-content-sm-between align-items-center gap-3 bg-primary px-4 py-3'>
         <section class='d-flex justify-content-center justify-content-sm-end align-items-center gap-3 fs-5'>
           <a href='#'><i class='bi bi-bell text-white'></i></a>
@@ -134,11 +134,13 @@
         </section>
       </header>
 
-      <div class='row'>
-        <div class='col-md-8'>
-          <strong>Your Projects</strong>
-          <div class='row'>
-            <div class='card col-md-6'>
+      <div class='row m-3'>
+        <div class='col-xl-8'>
+          <strong id='projects-header' class='fs-4'>
+            Your Projects
+          </strong>
+          <div class='row grid gap-3 mt-3'>
+            <div class='card rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #1</h5>
                 <p class='card-text'>
@@ -146,14 +148,17 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
-                <span class='d-flex align-items-center justify-content-end gap-4 fs-4'>
-                  <a href='#' title='Favorite' class=''><i class='bi bi-star-fill'></i></a>
-                  <a href='#' title='Expand' class='text-center'><i class='bi bi-arrows-angle-expand'></i></a>
+                <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <span class='d-flex gap-4'>
+                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
+                  </span>
                 </span>
               </div>
             </div>
 
-            <div class='card col-md-6'>
+            <div class='card rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #2</h5>
                 <p class='card-text'>
@@ -161,14 +166,17 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
-                <span class='d-flex align-items-center justify-content-end gap-4 fs-4'>
-                  <a href='#' title='Favorite' class=''><i class='bi bi-star-fill'></i></a>
-                  <a href='#' title='Expand' class='text-center'><i class='bi bi-arrows-angle-expand'></i></a>
+                <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <span class='d-flex gap-4'>
+                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
+                  </span>
                 </span>
               </div>
             </div>
 
-            <div class='card col-md-6'>
+            <div class='card rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #3</h5>
                 <p class='card-text'>
@@ -176,14 +184,17 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
-                <span class='d-flex align-items-center justify-content-end gap-4 fs-4'>
-                  <a href='#' title='Favorite' class=''><i class='bi bi-star-fill'></i></a>
-                  <a href='#' title='Expand' class='text-center'><i class='bi bi-arrows-angle-expand'></i></a>
+                <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <span class='d-flex gap-4'>
+                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
+                  </span>
                 </span>
               </div>
             </div>
 
-            <div class='card col-md-6'>
+            <div class='card rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #4</h5>
                 <p class='card-text'>
@@ -191,14 +202,17 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
-                <span class='d-flex align-items-center justify-content-end gap-4 fs-4'>
-                  <a href='#' title='Favorite' class=''><i class='bi bi-star-fill'></i></a>
-                  <a href='#' title='Expand' class='text-center'><i class='bi bi-arrows-angle-expand'></i></a>
+                <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <span class='d-flex gap-4'>
+                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
+                  </span>
                 </span>
               </div>
             </div>
 
-            <div class='card col-md-6'>
+            <div class='card rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #5</h5>
                 <p class='card-text'>
@@ -206,14 +220,17 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
-                <span class='d-flex align-items-center justify-content-end gap-4 fs-4'>
-                  <a href='#' title='Favorite' class=''><i class='bi bi-star-fill'></i></a>
-                  <a href='#' title='Expand' class='text-center'><i class='bi bi-arrows-angle-expand'></i></a>
+                <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <span class='d-flex gap-4'>
+                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
+                  </span>
                 </span>
               </div>
             </div>
 
-            <div class='card col-md-6'>
+            <div class='card rounded-3'>
               <div class='card-body'>
                 <h5 class='card-title'>Project #6</h5>
                 <p class='card-text'>
@@ -221,20 +238,23 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
-                <span class='d-flex align-items-center justify-content-end gap-4 fs-4'>
-                  <a href='#' title='Favorite' class=''><i class='bi bi-star-fill'></i></a>
-                  <a href='#' title='Expand' class='text-center'><i class='bi bi-arrows-angle-expand'></i></a>
+                <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
+                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3-fill'></i></a>
+                  <span class='d-flex gap-4'>
+                    <a href='#' title='Favorite'><i class='bi bi-star-fill'></i></a>
+                    <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
+                  </span>
                 </span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class='col-md-4 bg-success'>
-          <div class='col-md-6'>
+        <div class='col-xl-4 bg-success'>
+          <div>
             Announcements
           </div>
-          <div class='col-md-4 bg-success'>
+          <div>
             Trending
           </div>
         </div>
