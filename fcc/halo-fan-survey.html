@@ -1,99 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- Boilerplate -->
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="stylesheets/halo-fan-survey-styles.css" rel="stylesheet">
-  <link href="../favicon.ico" rel="icon">
-  <title>Halo Fan Survey</title>
-</head>
-<!-- The Intro -->
-<body>
-  <main>
-    <h1 id="title">Halo: Combat Evolved Fan Survey 2022</h1>
-    <p id="description">Tell us about your favorite levels, your incredible feats and stories you had with your friends!</p>
-  </main>
-  <hr id="hr1">
-<!-- User Info -->
-<h2>About yourself</h2>
-<div id="survey">
-  <form id="survey-form">
-    <label for="name" id="name-label">Full Name:</label>
-    <br>
-      <input id="name" type="text" placeholder="John Smith" required>
-    <br>
-    <label for="email" id="email-label">Email:</label>
-    <br>
-      <input id="email" type="email" placeholder="johnsmith@mail.com" required>
-    <br>
-    <label for="number" id="number-label">Age:</label>
-    <br>
-      <input id="number" type="number" placeholder="21" min="16" max="120">
-    <br>
-    <label for="dropdown" id="dropdown-label">Gender:</label>
-    <br>
-      <select id="dropdown">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="nonb">Non-binary</option>
-      </select>
-    <hr id="hr2">
-<!-- Difficulty Level -->
-  <h3>About your playthrough</h3> 
-  <div id="survey-difficulty">
-    <label for="difficulty" id="difficulty-label"><strong>The Difficulty level played at:</strong></label>
-    <br>
-      <input id="difficulty" type="radio" name="difficulty" value="easy"> Easy
-    <br>
-      <input id="difficulty" type="radio" name="difficulty" value="normal"> Normal
-    <br>
-      <input id="difficulty" type="radio" name="difficulty" value="heroic"> Heroic
-    <br>
-      <input id="difficulty" type="radio" name="difficulty" value="legendary"> Legendary
-    <br><br>
-  </div>
-    <hr id="hr3">
-<!-- Favorite Levels -->
-  <div id="survey-levels">
-    <label for="favlevel" id="favlevel-label"><strong>Your favorite levels:</strong></label>
-    <br>
-      <input id="favlevel" type="checkbox" value="pillar"> The Pillar of Autumn
-    <br>
-      <input id="favlevel" type="checkbox" value="halo"> Halo
-    <br>
-      <input id="favlevel" type="checkbox" value="truth"> The Truth and Reconciliation
-    <br>
-      <input id="favlevel" type="checkbox" value="silent"> The Silent Cartographer
-    <br>
-      <input id="favlevel" type="checkbox" value="control"> Assault on the Control Room
-    <br>
-      <input id="favlevel" type="checkbox" value="343"> 343 Guilty Spark
-    <br>
-      <input id="favlevel" type="checkbox" value="library"> The Library
-    <br>
-      <input id="favlevel" type="checkbox" value="betrayals"> Two Betrayals
-    <br>
-      <input id="favlevel" type="checkbox" value="keyes"> Keyes
-    <br>
-      <input id="favlevel" type="checkbox" value="maw"> The Maw
-    <br><br>
-  </div>
-    <hr id="hr4">
-<!-- User Stories -->
-  <div id="survey-story">
-    <label for="stories" id="stories-label"><strong>Your stories to share:</strong></label>
-    <br>
-      <textarea id="stories" placeholder="I did a crazy grenade jump..."></textarea>
-  </div>
-<!-- Submit Button -->
-  <div id="survey-submit">
-    <label for="submit" id="submit-label"></label>
-    <br><br>
-      <input id="submit" type="submit" value="Submit!">
-  </div>
-  </form>
-</div>
-</body>
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='description' content='Halo: CE Fan Survey 2022'>
+    <meta name='keywords' content='gaming, survey'>
+    <meta name='author' content='Eldar Pashazade'>
+    <meta name='theme-color' content='#841268'>
 
+    <meta property='og:type' content='website'>
+    <meta property='og:title' content='Halo Fan Survey'>
+    <meta property='og:description' content='Halo: CE Fan Survey 2022'>
+    <meta property='og:url' content='https://eldarlrd.github.io/web-design/fcc/halo-fan-survey.html'>
+
+    <link rel='stylesheet' type='text/css' href='stylesheets/halo-fan-survey-styles.css'>
+    <link rel='icon' type='image/png' sizes='512x512' href='assets/favicons/halo.png'>
+    <title>Halo Fan Survey</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id='title'>Halo: CE Fan Survey 2022</h1>
+      <p id='description'>
+        Tell us about your favorite levels, incredible feats, and stories had with friends!
+      </p>
+    </header>
+
+    <form id='survey-form'>
+      <section>
+        <h2>Personal</h2>
+        <div class='topic'>
+          <label for='name'>Full name</label>
+          <input class='text' id='name' type='text' placeholder='John-117' required>
+        </div>
+  
+        <div>
+          <label for='email'>Email</label>
+          <input class='text' id='email' type='email' placeholder='absolution@covenant.com' required>
+        </div>
+  
+        <div>
+          <label for='number'>Age</label>
+          <input class='text' id='number' type='number' placeholder='41' min='16' max='120'>
+        </div>
+
+        <div>
+          <label for='dropdown'>Gender</label>
+          <select id='dropdown'>
+            <option value='male'>Male</option>
+            <option value='female'>Female</option>
+            <option value='enbee'>Non-binary</option>
+          </select>
+        </div>
+        
+        
+        <h2>Playthrough</h2>
+        <div class='topic'>
+          <label for='difficulty'>Difficulty</label>
+          <span>
+            <input id='difficulty' type='radio' name='difficulty' value='easy'> Easy
+          </span>
+          <span>
+            <input id='difficulty' type='radio' name='difficulty' value='normal'> Normal
+          </span>
+          <span>
+            <input id='difficulty' type='radio' name='difficulty' value='heroic'> Heroic
+          </span>
+          <span>
+            <input id='difficulty' type='radio' name='difficulty' value='legendary'> Legendary
+          </span>
+        </div>
+
+        <div class='topic'>
+          <label for='level'>Favorite levels</label>
+          <span>
+            <input id='level' type='checkbox' value='pillar'> The Pillar of Autumn
+          </span>
+          <span>
+            <input id='level' type='checkbox' value='halo'> Halo
+          </span>
+          <span>
+            <input id='level' type='checkbox' value='truth'> The Truth and Reconciliation
+          </span>
+          <span>
+            <input id='level' type='checkbox' value='silent'> The Silent Cartographer
+          </span>
+          <span>
+            <input id='level' type='checkbox' value='control'> Assault on the Control Room
+          </span>
+          <span>
+            <input id='level' type='checkbox' value='343'> 343 Guilty Spark
+          </span>
+          <span>
+            <input id='level' type='checkbox' value='library'> The Library
+          </span>
+          <span>
+            <input id='level' type='checkbox' value='betrayals'> Two Betrayals
+          </span>
+          <span>
+            <input id='level' type='checkbox' value='keyes'> Keyes
+          </span>
+          <span>
+            <input id='level' type='checkbox' value='maw'> The Maw
+          </span>
+        </div>
+
+        <label for='stories'>Stories</label>
+        <textarea id='stories' placeholder='I did a crazy grenade jump...'></textarea>
+
+        <label for='submit' id='submit-label'></label>
+        <input id='submit' type='submit' value='Submit!'>
+      </section>
+    </form>
+  </body>
 </html>
