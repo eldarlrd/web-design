@@ -2,6 +2,7 @@
   --acid: #76ff03; /* MUI-lightGreen-A400 */
   --green: #1b5e20; /* MUI-green-900 */
   --plasma: #880e4f; /* MUI-pink-900 */
+  --purple: #4a148c; /* MUI-purple-900 */
   --white: #fafafa; /* MUI-grey-50 */
   --font: system-ui, sans-serif;
 
@@ -9,13 +10,13 @@
   scrollbar-width: thin;
   justify-content: center;
   scroll-behavior: smooth;
-  background: var(--plasma);
+  background: var(--purple);
   accent-color: var(--acid);
 }
 
 ::selection {
   color: var(--white);
-  background: var(--plasma);
+  background: var(--purple);
 }
 
 body {
@@ -53,8 +54,8 @@ section {
   display: flex;
   padding: 0 1rem;
   user-select: none;
+  margin: 0.375rem 0;
   align-items: center;
-  margin-top: 0.375rem;
   padding-bottom: 2rem;
   flex-direction: column;
   background: var(--green);
@@ -144,5 +145,20 @@ section {
         cursor: pointer;
       }
     }
+  }
+}
+
+footer {
+  user-select: none;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--white);
+  font-size: 1.125rem;
+  background: var(--plasma);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  & a {
+    color: currentColor;
   }
 }
