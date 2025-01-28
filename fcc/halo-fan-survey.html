@@ -6,7 +6,7 @@
     <meta name='description' content='Halo: CE Fan Survey 2022'>
     <meta name='keywords' content='gaming, survey'>
     <meta name='author' content='Eldar Pashazade'>
-    <meta name='theme-color' content='#841268'>
+    <meta name='theme-color' content='#880e4f'>
 
     <meta property='og:type' content='website'>
     <meta property='og:title' content='Halo Fan Survey'>
@@ -41,12 +41,12 @@
   
         <div>
           <label for='number'>Age</label>
-          <input class='text' id='number' type='number' placeholder='41' min='16' max='120'>
+          <input class='text' id='number' type='number' placeholder='41' min='16' max='120' required>
         </div>
 
         <div>
           <label for='dropdown'>Gender</label>
-          <select id='dropdown'>
+          <select id='dropdown' required>
             <option value='male'>Male</option>
             <option value='female'>Female</option>
             <option value='enbee'>Non-binary</option>
@@ -58,16 +58,16 @@
         <div class='topic'>
           <label for='difficulty'>Difficulty</label>
           <span>
-            <input id='difficulty' type='radio' name='difficulty' value='easy'> Easy
+            <input id='difficulty' type='radio' name='difficulty' value='easy' required> Easy
           </span>
           <span>
-            <input id='difficulty' type='radio' name='difficulty' value='normal'> Normal
+            <input id='difficulty' type='radio' name='difficulty' value='normal' required> Normal
           </span>
           <span>
-            <input id='difficulty' type='radio' name='difficulty' value='heroic'> Heroic
+            <input id='difficulty' type='radio' name='difficulty' value='heroic' required> Heroic
           </span>
           <span>
-            <input id='difficulty' type='radio' name='difficulty' value='legendary'> Legendary
+            <input id='difficulty' type='radio' name='difficulty' value='legendary' required> Legendary
           </span>
         </div>
 
@@ -105,11 +105,14 @@
           </span>
         </div>
 
-        <label for='stories'>Stories</label>
-        <textarea id='stories' placeholder='I did a crazy grenade jump...'></textarea>
-
-        <label for='submit' id='submit-label'></label>
-        <input id='submit' type='submit' value='Submit!'>
+        <div id='story'>
+          <label for='stories'>Stories</label>
+          <textarea id='stories' placeholder='I did a crazy grenade jump...' required></textarea>
+          <div>
+            <input id='submit' type='submit' value='Submit'>
+            <label for='submit' id='submit-label'></label>
+          </div>
+        </div>
       </section>
     </form>
   </body>
