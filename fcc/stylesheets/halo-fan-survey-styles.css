@@ -1,10 +1,16 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Nasalization';
+  src: url('../assets/fonts/Nasalization.woff2') format('woff2');
+}
+
 :root {
   --acid: #76ff03; /* MUI-lightGreen-A400 */
   --green: #1b5e20; /* MUI-green-900 */
   --plasma: #880e4f; /* MUI-pink-900 */
   --purple: #4a148c; /* MUI-purple-900 */
   --white: #fafafa; /* MUI-grey-50 */
-  --font: system-ui, sans-serif;
+  --font: 'Nasalization', system-ui, sans-serif;
 
   display: flex;
   scrollbar-width: thin;
@@ -68,6 +74,7 @@ section {
 
   & div {
     display: inherit;
+    min-width: 18.75rem;
     flex-direction: column;
     margin-bottom: 0.25rem;
     align-items: flex-start;
@@ -82,7 +89,7 @@ section {
     & .text {
       border: none;
       font-size: 1rem;
-      min-width: 16rem;
+      min-width: 16.25rem;
       margin-bottom: 0.5rem;
       border-radius: 0.25rem;
       padding: 0.25rem 0.5rem;
@@ -119,14 +126,17 @@ section {
           padding: 0.375rem 1rem;
           border-radius: 0.25rem;
           background: var(--white);
-          font-family: var(--font);
         }
       }
     }
 
+    & input {
+      font-family: var(--font);
+    }
+
     & select {
       border: none;
-      min-width: 17rem;
+      min-width: 17.25rem;
       font-size: 1.125rem;
       border-radius: 0.25rem;
       padding: 0.25rem 0.5rem;
