@@ -23,18 +23,18 @@
   background: var(--white);
 }
 
-body {
+main {
   display: flex;
   margin: 0 1rem;
   min-height: 100dvh;
-  color: var(--white);
   align-items: center;
+  color: var(--white);
   flex-direction: column;
   font-family: var(--font);
   justify-content: space-between;
 }
 
-header, footer {
+#img-div, footer {
   margin: 1.25rem 0;
   text-align: center;
   font-size: 1.125rem;
@@ -57,7 +57,13 @@ header, footer {
   }
 }
 
-main {
+#image {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+section {
   max-width: 45rem;
 }
 
