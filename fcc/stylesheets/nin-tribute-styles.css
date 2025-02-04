@@ -1,0 +1,121 @@
+@font-face {
+  font-display: swap;
+  font-family: 'DIN Engschrift';
+  src: url('../assets/fonts/DINEngschrift.woff2') format('woff2');
+}
+
+:root {
+  --font: 'DIN Engschrift', sans-serif; /* nindestruct */
+  --transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --black: #16191a;
+  --white: #fbfbfb;
+  --gray: #2f3336;
+  --tap-gray: #2f333680;
+
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  background: var(--black);
+  accent-color: var(--black);
+}
+
+::selection {
+  color: var(--black);
+  background: var(--white);
+}
+
+body {
+  display: flex;
+  margin: 0 1rem;
+  min-height: 100dvh;
+  color: var(--white);
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font);
+  justify-content: space-between;
+}
+
+header, footer {
+  margin: 1.25rem 0;
+  text-align: center;
+  font-size: 1.125rem;
+
+  & h1, & h2 {
+    line-height: 1;
+  }
+
+  & h1 {
+    margin-bottom: 0;
+  }
+
+  & h2 {
+    margin-top: 1rem;
+    font-weight: 400;
+  }
+
+  & p {
+    margin: 0.5rem 0;
+  }
+}
+
+main {
+  max-width: 45rem;
+}
+
+figure {
+  margin: 0;
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.75rem;
+
+  & img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  & figcaption {
+    font-size: 1.25rem;
+  }
+}
+
+a {
+  line-height: 1;
+  position: relative;
+  color: currentColor;
+  word-wrap: break-word;
+  text-decoration: none;
+  transition: color var(--transition);
+  -webkit-tap-highlight-color: var(--tap-gray);
+
+  & i {
+    vertical-align: middle;
+  }
+
+  &:focus-visible {
+    outline-style: solid;
+    outline-width: 0.125rem;
+    outline-offset: 0.125rem;
+    outline-color: currentColor;
+  }
+
+  &::before {
+    left: 0;
+    width: 100%;
+    content: '';
+    display: block;
+    height: 0.125rem;
+    bottom: -0.375rem;
+    position: absolute;
+    transform: scaleX(0);
+    background: var(--white);
+    transform-origin: bottom right;
+    transition: transform var(--transition);
+  }
+
+  @media (hover: hover) {
+    &:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
