@@ -51,7 +51,20 @@ nav {
   background: var(--olive);
   border-bottom: 0.125rem solid var(--olive-fg);
 
-  @media (width >= 64rem) {
+  & header {
+    display: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border: 0.125rem solid var(--olive-fg);
+    
+    @media (width >= 64rem) {
+      display: inline-block;
+    }
+  }
+}
+
+@media (width >= 64rem) {
+  nav {
     gap: 2rem;
     min-width: 16rem;
     min-height: 100%;
@@ -101,13 +114,13 @@ main {
   }
 }
 
-section {
+aside {
   gap: 1.5rem;
   display: inherit;
   flex-direction: column;
 }
 
-figure {
+section {
   margin: 0;
   border-radius: 1rem;
   padding: 1.5rem 1rem;
@@ -115,10 +128,15 @@ figure {
   box-shadow: var(--shadow);
   border: 0.125rem solid var(--olive-fg);
 
-  & h1 {
+  @media (width >= 64rem) {
+    scroll-margin-top: 1rem;
+  }
+
+  & header {
     margin: 0;
     font-weight: 400;
     margin-bottom: 1rem;
+    font-size: 1.625rem;
   }
 
   & img {
