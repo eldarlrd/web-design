@@ -1,0 +1,259 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Magic Medieval';
+  src: url('../assets/fonts/MagicMedieval.woff2') format('woff2'); /* UESP */
+}
+
+:root {
+  --radius: 0.5rem;
+  --black: #141414; /* Ant-gray-12 */
+  --white: #fafafa; /* Ant-gray-2 */
+  --gray: #262626; /* Ant-gray-10 */
+  --gold-lt: #faad14; /* Ant-gold-6 */
+  --gold-dk: #d48806; /* Ant-gold-7 */
+  --tap: #d4880680;
+  --font: 'Magic Medieval', serif;
+  --transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --grain: url('../assets/images/backgrounds/grain.webp'); /* Transparent Textures */
+
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  background: var(--white);
+  accent-color: var(--gold-dk);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--gold-dk);
+}
+
+body {
+  min-width: 100%;
+  min-height: 100dvh;
+  color: var(--black);
+  font-family: var(--font);
+}
+
+nav {
+  gap: 1rem;
+  display: flex;
+  position: fixed;
+  min-width: 100%;
+  padding: 0 1rem;
+  user-select: none;
+  min-height: 3.5rem;
+  align-items: center;
+  background: var(--gray);
+
+  & div {
+    gap: 1rem;
+    display: inherit;
+    align-items: center;
+
+    & a {
+      color: var(--white);
+    }
+  }
+
+  & #title {
+    gap: 0.375rem;
+    display: inherit;
+    align-items: center;
+    color: var(--gold-lt);
+
+    & img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+a {
+  line-height: 1;
+  position: relative;
+  color: currentColor;
+  word-wrap: break-word;
+  text-decoration: none;
+  -webkit-tap-highlight-color: var(--tap);
+
+  & i {
+    vertical-align: middle;
+  }
+
+  &:focus-visible {
+    outline-style: solid;
+    outline-width: 0.125rem;
+    outline-offset: 0.125rem;
+    outline-color: currentColor;
+  }
+
+  &::before {
+    left: 0;
+    width: 100%;
+    content: '';
+    display: block;
+    height: 0.125rem;
+    bottom: -0.75rem;
+    position: absolute;
+    transform: scaleX(0);
+    background: currentColor;
+    border-radius: var(--radius);
+    transition: transform var(--transition);
+  }
+
+  &#title {
+    &::before {
+      bottom: -0.375rem;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 4.5rem 1rem;
+  flex-direction: column;
+
+  & h1, & h2, & h3 {
+    margin: 0;
+    user-select: none;
+    margin-bottom: 1rem;
+  }
+
+  & h1 {
+    gap: 0.375rem;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  & h3 {
+    font-style: italic;
+    font-size: 1.125rem;
+  }
+
+  & quote {
+    gap: 0.5rem;
+    padding: 1rem;
+    display: block;
+    margin: 1rem 0;
+    display: inherit;
+    font-style: italic;
+    flex-direction: column;
+    background-repeat: repeat;
+    border-radius: var(--radius);
+    background-color: var(--white);
+    background-image: var(--grain);
+    border: 1px solid var(--gray);
+
+    & #author {
+      text-align: end;
+    }
+  }
+
+  & iframe {
+    height: auto;
+    max-width: 100%;
+    margin-top: 1rem;
+    aspect-ratio: 1.33;
+  }
+}
+
+main, aside {
+  scroll-margin-top: 5rem;
+
+  & h1, & h2 {
+    user-select: none;
+    text-align: center;
+  }
+
+  & h1 {
+    margin-bottom: 0;
+  }
+
+  & h2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+section {
+  gap: 1.5rem;
+  display: flex;
+  margin: 0 1rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+
+  & div {
+    gap: 1rem;
+    width: 20rem;
+    display: inherit;
+    min-height: 30rem;
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    background-repeat: repeat;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray);
+    background-color: var(--white);
+    background-image: var(--grain);
+    justify-content: space-between;
+
+    & h2, & h3, & p {
+      margin: 0;
+      user-select: auto;
+    }
+
+    & h2 {
+      font-size: 1.375rem;
+    }
+
+    & h3 {
+      font-weight: normal;
+      font-size: 1.125rem;
+    }
+
+    & p {
+      font-size: 1.375rem;
+    }
+
+    & img {
+      max-width: 12rem;
+      max-height: 16rem;
+    }
+
+    & button {
+      width: 100%;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1.125rem;
+      padding: 0.5rem 2rem;
+      background: var(--gold-lt);
+      border-radius: var(--radius);
+      border: 1px solid var(--gray);
+      -webkit-tap-highlight-color: var(--tap);
+      transition: background var(--transition);
+
+      @media (hover: hover) {
+        &:hover {
+          background: var(--gold-dk);
+        }
+      }
+    }
+  }
+}
