@@ -189,69 +189,71 @@ main, aside {
   }
 }
 
-section {
-  gap: 1.5rem;
-  display: flex;
-  margin: 0 1rem;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center;
-
-  & div {
-    gap: 1rem;
-    width: 20rem;
-    display: inherit;
-    min-height: 30rem;
-    text-align: center;
-    align-items: center;
-    padding: 1.5rem 1rem;
-    flex-direction: column;
-    background-repeat: repeat;
-    border-radius: var(--radius);
-    border: 1px solid var(--gray);
-    background-color: var(--white);
-    background-image: var(--grain);
-    justify-content: space-between;
-
-    & h2, & h3, & p {
-      margin: 0;
-      user-select: auto;
-    }
-
-    & h2 {
-      font-size: 1.375rem;
-    }
-
-    & h3 {
-      font-weight: normal;
-      font-size: 1.125rem;
-    }
-
-    & p {
-      font-size: 1.375rem;
-    }
-
-    & img {
-      max-width: 12rem;
-      max-height: 16rem;
-    }
-
-    & button {
-      width: 100%;
-      cursor: pointer;
-      margin-top: 1rem;
-      font-weight: bold;
-      font-size: 1.125rem;
-      padding: 0.5rem 2rem;
-      background: var(--gold-lt);
+main {
+  & section {
+    gap: 1.5rem;
+    display: flex;
+    margin: 0 1rem;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+  
+    & div {
+      gap: 1rem;
+      width: 20rem;
+      display: inherit;
+      min-height: 30rem;
+      text-align: center;
+      align-items: center;
+      padding: 1.5rem 1rem;
+      flex-direction: column;
+      background-repeat: repeat;
       border-radius: var(--radius);
       border: 1px solid var(--gray);
-      -webkit-tap-highlight-color: var(--tap);
-      transition: background var(--transition);
-
-      @media (hover: hover) {
-        &:hover {
-          background: var(--gold-dk);
+      background-color: var(--white);
+      background-image: var(--grain);
+      justify-content: space-between;
+  
+      & h2, & h3, & p {
+        margin: 0;
+        user-select: auto;
+      }
+  
+      & h2 {
+        font-size: 1.375rem;
+      }
+  
+      & h3 {
+        font-weight: normal;
+        font-size: 1.125rem;
+      }
+  
+      & p {
+        font-size: 1.375rem;
+      }
+  
+      & img {
+        max-width: 12rem;
+        max-height: 16rem;
+      }
+  
+      & button {
+        width: 100%;
+        cursor: pointer;
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 1.125rem;
+        padding: 0.5rem 2rem;
+        background: var(--gold-lt);
+        border-radius: var(--radius);
+        border: 1px solid var(--gray);
+        -webkit-tap-highlight-color: var(--tap);
+        transition: background var(--transition);
+  
+        @media (hover: hover) {
+          &:hover {
+            background: var(--gold-dk);
+          }
         }
       }
     }
