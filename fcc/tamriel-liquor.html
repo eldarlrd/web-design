@@ -30,28 +30,28 @@
   </head>
 
   <body>
-    <nav>
+    <nav id='nav-bar'>
       <div>
-        <a id='title' type='text/html' href='#'>
+        <a class='nav-link' id='title' type='text/html' href='#header'>
           <img alt='Moon & Star' src='assets/images/logos/tes.webp'>
           Tamriel Liquor
         </a>
 
-        <a type='text/html' href='#shelf'>
+        <a class='nav-link' type='text/html' href='#shelf'>
           <i class='fa-solid fa-fw fa-wine-bottle'></i>
           Shelf
         </a>
 
-        <a type='text/html' href='#subscribe'>
+        <a class='nav-link' type='text/html' href='#subscribe'>
           <i class='fa-solid fa-fw fa-envelope'></i>
           Subscribe
         </a>
       </div>
     </nav>
 
-    <header>
+    <header id='header'>
       <h1>
-        <img alt='Moon & Star' src='assets/images/logos/tes.webp'>
+        <img id='header-img' alt='Moon & Star' src='assets/images/logos/tes.webp'>
         Tamriel Liquor
       </h1>
       <h2>The Finest Drinks in the Empire</h2>
@@ -66,12 +66,14 @@
       </quote>
 
       <iframe
+        id='video'
         width='665'
         height='500'
         frameborder='0'
         allowfullscreen
+        referrerpolicy='strict-origin-when-cross-origin'
         allow='accelerometer;encrypted-media;gyroscope;picture-in-picture;web-share'
-        src='https://www.youtube.com/embed/xhMfTm2-x04?si=pjoADBE4a6nXKFuU'>
+        src='https://youtube.com/embed/NCLu2yy_dP8?si=3QL7pvLcFP9vmvEb'>
       </iframe>
     </header>
 
@@ -239,61 +241,110 @@
     </main>
 
     <aside id='subscribe'>
-      <form>
+      <h1>
+        <i class='fa-solid fa-fw fa-envelope'></i>
+        Subscribe
+      </h1>
+
+      <form id='form' action='https://www.freecodecamp.com/email-submit'>
         <section>
-          <label>
-            Subscribe
-          </label>
-
-          <div>
-            Specials
-            <input type='checkbox'> Balmora Blue
-            <input type='checkbox'> Sujamma
+          <div class='liquor-type'>
+            <span class='type-title'>Specials</span>
+            <div>
+              <span>
+                <input type='checkbox'> Balmora Blue
+              </span>
+              <span>
+                <input type='checkbox'> Sujamma
+              </span>
+            </div>
           </div>
 
-          <div>
-            Absinthe
-            <input type='checkbox'> Skooma Absinthe
+          <div class='liquor-type'>
+            <span class='type-title'>Absinthe</span>
+            <div>
+              <span>
+                <input type='checkbox'> Skooma Absinthe
+              </span>
+            </div>
           </div>
 
-          <div>
-            Beer
-            <input type='checkbox'> Mazte
+          <div class='liquor-type'>
+            <span class='type-title'>Beer</span>
+            <div>
+              <span>
+                <input type='checkbox'> Mazte
+              </span>
+            </div>
+          </div class='liquor-type'>
+
+          <div class='liquor-type'>
+            <span class='type-title'>Brandy</span>
+            <div>
+              <span>
+                <input type='checkbox'> Cyrodiilic Brandy
+              </span>
+              <span>
+                <input type='checkbox'> Greef
+              </span>
+            </div>
           </div>
 
-          <div>
-            Brandy
-            <input type='checkbox'> Cyrodiilic Brandy
-            <input type='checkbox'> Greef
+          <div class='liquor-type'>
+            <span class='type-title'>Mead</span>
+            <div>
+              <span>
+                <input type='checkbox'> Black-Briar Mead
+              </span>
+              <span>
+                <input type='checkbox'> Black-Briar Reserve
+              </span>
+              <span>
+                <input type='checkbox'> Honningbrew Mead
+              </span>
+            </div>
           </div>
 
-          <div>
-            Mead
-            <input type='checkbox'> Black-Briar Mead
-            <input type='checkbox'> Black-Briar Reserve
-            <input type='checkbox'> Honningbrew Mead
+          <div class='liquor-type'>
+            <span class='type-title'>Whiskey</span>
+            <div>
+              <span>
+                <input type='checkbox'> Flin
+              </span>
+            </div>
           </div>
 
-          <div>
-            Whiskey
-            <input type='checkbox'> Flin
-          </div>
-
-          <div>
-            Wine
-            <input type='checkbox'> Alto Wine
-            <input type='checkbox'> Emberbrand Wine
-            <input type='checkbox'> Firebrand Wine
-            <input type='checkbox'> Shein
-            <input type='checkbox'> Spiced Wine
-            <input type='checkbox'> Tamika's West Weald Wine
+          <div class='liquor-type'>
+            <span class='type-title'>Wine</span>
+            <div>
+              <span>
+                <input type='checkbox'> Alto Wine
+              </span>
+              <span>
+                <input type='checkbox'> Emberbrand Wine
+              </span>
+              <span>
+                <input type='checkbox'> Firebrand Wine
+              </span>
+              <span>
+                <input type='checkbox'> Shein
+              </span>
+              <span>
+                <input type='checkbox'> Spiced Wine
+              </span>
+              <span>
+                <input type='checkbox'> Tamika's West Weald Wine
+              </span>
+            </div>
           </div>
         </section>
 
         <section>
-          <label>Email</label>
-          <input type='email' required>
-          <button type='submit'>
+          <label>
+            Email
+            <input id='email' type='email' name='email' placeholder='nerevar@vos' required>
+          </label>
+          <input id='submit' type='submit'>Submit</button>
         </section>
       </form>
     </aside>

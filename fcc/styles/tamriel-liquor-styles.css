@@ -172,6 +172,8 @@ header {
 }
 
 main, aside {
+  margin: 0 1rem;
+  padding-bottom: 4.5rem;
   scroll-margin-top: 5rem;
 
   & h1, & h2 {
@@ -180,7 +182,9 @@ main, aside {
   }
 
   & h1 {
+    font-size: 2rem;
     margin-bottom: 0;
+    margin-top: 1.375rem;
   }
 
   & h2 {
@@ -236,26 +240,103 @@ main {
         max-width: 12rem;
         max-height: 16rem;
       }
-  
-      & button {
-        width: 100%;
-        cursor: pointer;
-        margin-top: 1rem;
-        font-weight: bold;
-        font-size: 1.125rem;
-        padding: 0.5rem 2rem;
-        background: var(--gold-lt);
-        border-radius: var(--radius);
-        border: 1px solid var(--gray);
-        -webkit-tap-highlight-color: var(--tap);
-        transition: background var(--transition);
-  
-        @media (hover: hover) {
-          &:hover {
-            background: var(--gold-dk);
-          }
+    }
+  }
+}
+
+button, #submit {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding: 0.5rem 2rem;
+  background: var(--gold-lt);
+  border-radius: var(--radius);
+  border: 1px solid var(--gray);
+  -webkit-tap-highlight-color: var(--tap);
+  transition: background var(--transition);
+}
+
+@media (hover: hover) {
+  button:hover, #submit:hover {
+    background: var(--gold-dk);
+  }
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & h1 {
+    margin-bottom: 2rem;
+  }
+
+  & form {
+    gap: 1rem;
+    width: 20rem;
+    display: inherit;
+    min-height: 30rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    background-repeat: repeat;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray);
+    background-color: var(--white);
+    background-image: var(--grain);
+
+    & section {
+      gap: 1rem;
+      display: inherit;
+      text-align: start;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & .liquor-type {
+        gap: 0.375rem;
+        display: inherit;
+        flex-direction: column;
+        
+        & .type-title {
+          font-size: 1.25rem;
+        }
+
+        & div {
+          gap: 0.25rem;
+          display: inherit;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      & label {
+        gap: 0.375rem;
+        min-width: 100%;
+        display: inherit;
+        font-size: 1.25rem;
+        margin-bottom: -1rem;
+        flex-direction: column;
+
+        & input {
+          min-width: 100%;
+          padding: 0.375rem;
+          border-radius: var(--radius);
+          border: 1px solid var(--gray);
         }
       }
     }
   }
+}
+
+footer {
+  gap: 0.5rem;
+  display: flex;
+  user-select: none;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  flex-direction: column;
 }
