@@ -35,6 +35,7 @@ body {
 }
 
 nav {
+  top: 0;
   gap: 1rem;
   display: flex;
   position: fixed;
