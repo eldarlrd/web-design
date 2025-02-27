@@ -1,6 +1,7 @@
 @font-face {
-  font-family: GreatVibes;
-  src: url(../assets/fonts/GreatVibes.ttf);
+  font-display: swap;
+  font-family: 'Great Vibes';
+  src: url('../assets/fonts/GreatVibes.woff2') format('woff2');
 }
 
 html {
@@ -8,7 +9,7 @@ html {
 }
 
 body {
-  font-family: GreatVibes, serif;
+  font-family: 'Great Vibes', serif;
   text-align: center;
   background: #E0C9A6;
 }
