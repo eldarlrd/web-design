@@ -15,6 +15,8 @@
 
     <link rel='preconnect' type='text/html'
       href='https://cdn.jsdelivr.net' crossorigin='anonymous'>
+    <link rel='preconnect' type='text/xml'
+      href='https://kit.fontawesome.com' crossorigin='anonymous'>
 
     <link as='style' rel='preload' type='text/css'
       href='https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css'
@@ -22,75 +24,89 @@
   
     <link rel='stylesheet' type='text/css' href='styles/space-marines-styles.css'>
     <link rel='icon' type='image/png' sizes='512x512' href='assets/favicons/raven.png'>
+    <script type='text/javascript' src='https://kit.fontawesome.com/0db9b2eb32.js'
+      crossorigin='anonymous' defer></script>
     <title>Space Marines</title>
   </head>
 
   <body>
-    <header>
-      <nav>
-        <span id="logo">
-          <img src="assets/images/logos/astartes.webp"
-               alt="Adeptus Astartes Emblem">
-          <a>Adeptus Astartes</a>
-        </span>
-        <div id="drop">
-          <button>
-            <img src="assets/icons/planet.png"
-                 alt="Dropdown Toggle">
-          </button>
-          <span id="drop-planets">
-            <a>Tartarus</a>
-            <a>Lorn V</a>
-            <a>Kronus</a>
-          </span>
-        </div>
-
-        <span id="planets">
-          <a>Tartarus</a>
-          <a>Lorn V</a>
-          <a>Kronus</a>
-        </span>
-      </nav>
-
-      <div id="hero">
-        <span>
-          <img src="assets/logos/blood-ravens.png"
-               alt="Blood Ravens Logo">
-          <h1>Blood Ravens Chapter</h1>
-          <h2>Victory needs no explanation, defeat allows none.</h2>
-          <button>To battle!</button>
-        </span>
-        <img src="assets/marines/lone-marine.jpg"
-             alt="A Blood Ravens Marine">
+    <nav>
+      <div id='logo'>
+        <img class='icon' src='assets/images/icons/astartes.webp' alt='Skull Pillar'>
+        <p>Adeptus Astartes</p>
       </div>
+
+      <div id='dropdown'>
+        <button>
+          <img class='icon' src='assets/images/icons/planet.webp' alt='Planet'>
+        </button>
+
+        <div id='content'>
+          <p>
+            Tartarus <i class='fa-solid fa-rocket fa-2xs'></i>
+          </p>
+          <p>
+            Lorn V <i class='fa-solid fa-rocket fa-2xs'></i>
+          </p>
+          <p>
+            Kronus <i class='fa-solid fa-rocket fa-2xs'></i>
+          </p>
+          <p>
+            Calderis <i class='fa-solid fa-rocket fa-2xs'></i>
+          </p>
+          <p>
+            Meridian <i class='fa-solid fa-rocket fa-2xs'></i>
+          </p>
+          <p>
+            Aurelia <i class='fa-solid fa-rocket fa-2xs'></i>
+          </p>
+          <p>
+            Cyrene <i class='fa-solid fa-rocket fa-2xs'></i>
+          </p>
+          <p>
+            Acheron <i class='fa-solid fa-rocket fa-2xs'></i>
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div>
+        <img id='raven' src='assets/images/logos/raven.webp' alt='Blood Raven'>
+        <h1>Blood Ravens Chapter</h1>
+        <h2>Victory needs no explanation, defeat allows none.</h2>
+        <button>To Battle!</button>
+      </div>
+
+      <img id='hero' src='assets/images/backgrounds/lone-marine.webp' alt='A Blood Ravens Marine'>
     </header>
 
-    <main>
+    <!-- <main>
       <h1>They are the Bulwark against Terror</h1>
       <span>
         <figure>
-          <img src="assets/marines/marine-duo.jpg"
+          <img src="assets/images/marines/marine-duo.webp"
                alt="Two Marines Fighting">
           <figcaption>
             He who stands with me shall be my brother.
           </figcaption>
         </figure>
         <figure>
-          <img src="assets/marines/terminators.jpg"
+          <img src="assets/images/marines/terminators.webp"
                alt="Terminator Squad">
           <figcaption>
             A moment of laxity spawns a lifetime of heresy.
           </figcaption>
         </figure>
         <figure>
-          <img src="assets/marines/marines-vs-orkz.jpg"
+          <img src="assets/images/marines/marines-vs-orkz.webp"
                alt="Marines battling Orks">
           <figcaption>
             The blood of martyrs is the seed of the Imperium.
           </figcaption>
         </figure>
         <figure>
-          <img src="assets/marines/land-raider-vs-killa-kan.jpg"
+          <img src="assets/images/marines/land-raider-vs-killa-kan.webp"
                alt="A Land Raider defeats a Killa Kan">
           <figcaption>
             While the enemies of the Emperor still draw breath,
@@ -142,6 +158,6 @@
             target="_blank"
             rel="noreferrer">
             eldarlrd</a>
-    </footer>
+    </footer> -->
   </body>
 </html>
