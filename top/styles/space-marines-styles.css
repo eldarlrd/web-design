@@ -33,22 +33,26 @@ body {
   font-family: var(--font);
 }
 
-button {
+a, button {
   border: none;
-  cursor: pointer;
   border-radius: var(--radius);
+  cursor: pointer;
   -webkit-tap-highlight-color: var(--tap);
+  text-decoration: none;
+  transition: color var(--transition),
+  background var(--transition),
+  border-color var(--transition);
 }
 
 nav {
-  height: 4rem;
-  display: flex;
-  padding: 0 1rem;
-  user-select: none;
-  font-size: 1.75rem;
   align-items: center;
   background: var(--blood);
+  display: flex;
+  font-size: 1.75rem;
+  height: 4rem;
   justify-content: space-between;
+  padding: 0 1rem;
+  user-select: none;
 
   & #logo {
     gap: 0.25rem;
@@ -74,26 +78,27 @@ nav {
       background: none;
       aspect-ratio: 1 / 1;
     }
-  
+
     & #content {
-      z-index: 1;
-      right: 1rem;
-      display: none;
-      text-align: end;
-      min-width: 9rem;
-      position: absolute;
-      border: var(--border);
       background: var(--bone);
-      padding: 0.125rem 0.25rem;
+      border: var(--border);
       border-radius: var(--radius);
       box-shadow: var(--box-shadow);
-      
+      display: none;
+      min-width: 9rem;
+      padding: 0.125rem 0.25rem;
+      position: absolute;
+      right: 1rem;
+      text-align: end;
+      z-index: 1;
+
       & p {
+        color: var(--onyx);
         cursor: pointer;
         margin: 0.5rem 0.75rem;
-        transition: color var(--transition);
         -webkit-tap-highlight-color: var(--tap);
-        
+        transition: color var(--transition);
+
         & i {
           vertical-align: middle;
         }
@@ -114,25 +119,25 @@ nav {
 }
 
 header {
-  display: flex;
-  padding: 1rem;
-  gap: 2rem 10rem;
-  user-select: none;
-  color: var(--bone);
-  text-align: center;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
   background: var(--blood);
+  color: var(--bone);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 10rem;
+  justify-content: center;
   min-height: calc(100dvh - 4rem);
+  padding: 1rem;
+  text-align: center;
   text-shadow: var(--text-shadow);
+  user-select: none;
 
   @media (width >= 80rem) {
     & {
       flex-direction: row;
     }
   }
-  
+
   & #raven {
     padding: 1rem 0;
     background: var(--bone);
@@ -157,9 +162,6 @@ header {
     padding: 0.625rem 0.875rem;
     border: 1px solid var(--onyx);
     box-shadow: var(--box-shadow);
-    transition: color var(--transition),
-                background var(--transition),
-                border-color var(--transition);
 
     @media (hover: hover) {
       &:hover {
@@ -173,6 +175,31 @@ header {
       color: var(--bone);
       background: var(--onyx);
       border-color: var(--bone);
+    }
+  }
+}
+
+footer {
+  align-content: center;
+  background: var(--blood);
+  color: var(--bone);
+  font-size: 1.5rem;
+  font-weight: bold;
+  min-height: 8rem;
+  text-align: center;
+  user-select: none;
+
+  & div {
+    margin: 0.5rem 0;
+
+    & a {
+      color: currentColor;
+
+      @media (hover: hover) {
+        &:hover {
+          color: var(--onyx);
+        }
+      }
     }
   }
 }
