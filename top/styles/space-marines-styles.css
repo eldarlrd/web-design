@@ -27,10 +27,11 @@
 }
 
 body {
-  min-width: 100%;
-  min-height: 100dvh;
   background: var(--bone);
   font-family: var(--font);
+  min-height: 100dvh;
+  min-width: 100%;
+  user-select: none;
 }
 
 a, button {
@@ -52,7 +53,6 @@ nav {
   height: 4rem;
   justify-content: space-between;
   padding: 0 1rem;
-  user-select: none;
 
   & #logo {
     gap: 0.25rem;
@@ -154,7 +154,6 @@ header {
   padding: 1rem;
   text-align: center;
   text-shadow: var(--text-shadow);
-  user-select: none;
 
   @media (width >= 80rem) {
     & {
@@ -179,6 +178,47 @@ header {
   }
 }
 
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  & div {
+    display: grid;
+    gap: 4rem 16rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: max-content;
+
+    @media (width >= 48rem) {
+      & {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    & figure {
+      margin: 0;
+      max-width: min-content;
+
+      & img {
+        aspect-ratio: 1 / 1;
+        border: var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--box-shadow);
+        width: 20rem;
+      }
+
+      & figcaption {
+        font-size: 1.75rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
 article, section {
   align-items: center;
   display: flex;
@@ -193,7 +233,8 @@ article, section {
 }
 
 article {
-  padding: 4rem 1rem 2rem;
+  padding: 2rem 1rem;
+  user-select: text;
 
   & div {
     align-items: flex-end;
@@ -214,7 +255,6 @@ article {
 
 section {
   padding: 2rem 1rem 4rem;
-  user-select: none;
 
   & div {
     align-items: center;
@@ -236,7 +276,6 @@ footer {
   min-height: 8rem;
   text-align: center;
   text-shadow: var(--text-shadow);
-  user-select: none;
 
   & div {
     margin: 0.5rem 0;
