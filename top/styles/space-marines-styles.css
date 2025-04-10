@@ -179,11 +179,41 @@ header {
   }
 }
 
-section {
+article, section {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 4rem 1rem;
+
+  & div {
+    display: inherit;
+    flex-wrap: wrap;
+    gap: 0 5rem;
+    width: 40rem;
+  }
+}
+
+article {
+  padding: 4rem 1rem 2rem;
+
+  & div {
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 1.625rem;
+    padding: 1rem 0;
+    text-align: justify;
+
+    & blockquote {
+      margin: 0 0 1rem;
+    }
+
+    & span {
+      font-weight: bold;
+    }
+  }
+}
+
+section {
+  padding: 2rem 1rem 4rem;
   user-select: none;
 
   & div {
@@ -192,9 +222,6 @@ section {
     border-radius: var(--radius);
     box-shadow: var(--box-shadow);
     color: var(--bone);
-    display: inherit;
-    flex-wrap: wrap;
-    gap: 0 5rem;
     padding: 1rem 3rem;
     text-shadow: var(--text-shadow);
   }
