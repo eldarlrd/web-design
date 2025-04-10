@@ -118,6 +118,30 @@ nav {
   }
 }
 
+.action {
+  background: var(--bone);
+  border: 1px solid var(--onyx);
+  box-shadow: var(--box-shadow);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.75rem 0;
+  padding: 0.625rem 0.875rem;
+
+  @media (hover: hover) {
+    &:hover {
+      background: var(--onyx);
+      border-color: var(--bone);
+      color: var(--bone);
+    }
+  }
+
+  &:active {
+    background: var(--onyx);
+    border-color: var(--bone);
+    color: var(--bone);
+  }
+}
+
 header {
   align-items: center;
   background: var(--blood);
@@ -153,29 +177,26 @@ header {
     border-radius: var(--radius);
     box-shadow: var(--box-shadow);
   }
+}
 
-  & button {
-    margin: 0.75rem 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background: var(--bone);
-    padding: 0.625rem 0.875rem;
-    border: 1px solid var(--onyx);
+section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+  user-select: none;
+
+  & div {
+    align-items: center;
+    background: var(--blood);
+    border-radius: var(--radius);
     box-shadow: var(--box-shadow);
-
-    @media (hover: hover) {
-      &:hover {
-        color: var(--bone);
-        background: var(--onyx);
-        border-color: var(--bone);
-      }
-    }
-
-    &:active {
-      color: var(--bone);
-      background: var(--onyx);
-      border-color: var(--bone);
-    }
+    color: var(--bone);
+    display: inherit;
+    flex-wrap: wrap;
+    gap: 0 5rem;
+    padding: 1rem 3rem;
+    text-shadow: var(--text-shadow);
   }
 }
 
@@ -187,6 +208,7 @@ footer {
   font-weight: bold;
   min-height: 8rem;
   text-align: center;
+  text-shadow: var(--text-shadow);
   user-select: none;
 
   & div {
