@@ -291,3 +291,20 @@ footer {
     }
   }
 }
+
+
+figure.respect-tribute {
+  border: 2px solid #ffffff00;
+  padding: 8px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+figure.respect-tribute:hover {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0px rgba(255, 215, 0, 0.4); }
+  50% { box-shadow: 0 0 12px rgba(255, 215, 0, 0.8); }
+  100% { box-shadow: 0 0 0px rgba(255, 215, 0, 0.4); }
+}
