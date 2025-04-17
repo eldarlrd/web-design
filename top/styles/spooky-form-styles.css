@@ -25,18 +25,16 @@
 }
 
 body {
-  width: 100%;
+  accent-color: rgb(var(--pumpkin));
+  background: var(--light-black);
+  color: var(--dim-white);
+  font-family: sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  letter-spacing: .125em;
-  font-family: SanguisNoctis, var(--sans-serif);
-  color: var(--dim-white);
-  background: var(--light-black);
-  accent-color: rgb(var(--pumpkin));
+  width: 100%;
 }
-/* Banner */
+
 aside {
   display: flex;
   flex-direction: column;
