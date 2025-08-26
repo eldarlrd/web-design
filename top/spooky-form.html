@@ -30,116 +30,116 @@
 </head>
 
 <body>
-    <aside>
-      <div>
-        <img alt='Pumpkin' src='assets/images/logos/jack.webp'>
-      </div>
-    </aside>
+  <aside>
+    <div>
+      <img alt='Pumpkin' src='assets/images/logos/jack.webp'>
+    </div>
+  </aside>
 
-    <main>
-      <header>
-        <h1>Spooky Form</h1>
-        <h2>Once you enter, there's no going back...</h2>
+  <main>
+    <header>
+      <h1>Spooky Form</h1>
+      <h2>Once you enter, there's no going back...</h2>
 
-        <p>
-          Behold the very last form you shall ever fill out.
-          7 days after signing up, pick up the phone and face your destiny.
-          <em>(and other such threats)</em>
-        </p>
+      <p>
+        Behold the very last form you shall ever fill.
+        7 days after signing, pick up the phone and face your fate.
+        <span>(and other such threats)</span>
+      </p>
 
-        <p>Go ahead, but don't say we didn't warn you!</p>
-      </header>
+      <p>Go ahead, but don't say we didn't warn you!</p>
+    </header>
 
-      <form>
-        <section id='content'>
-          <div>
-            <label for='full-name'>
-              <i class='fa-solid fa-user fa-fw'></i>
-              Full name
-            </label>
-            <input
-              id='full-name'
-              maxlength='32'
-              minlength='4'
-              name='full-name'
-              pattern='[a-zA-Z]+'
-              required
-              type='text'>
-          </div>
-
-          <div>
-            <label for='phone'>
-              <i class='fa-solid fa-phone fa-fw'></i>
-              Phone
-            </label>
-            <input
-              id='phone'
-              maxlength='18'
-              minlength='9'
-              name='phone'
-              pattern='^(\+?\d{1,3}\s?)?(\(\d{2,3}\)|\d{2,3})[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$'
-              required
-              type='tel'>
-          </div>
-
-          <div>
-            <label for='password'>
-              <i class='fa-solid fa-key fa-fw'></i>
-              Password
-            </label>
-            <input
-              autocomplete='current-password'
-              id='password'
-              maxlength='32'
-              minlength='8'
-              name='password'
-              pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?|^*_=+-]).{8,32}$'
-              required
-              type='password'>
-          </div>
-
-          <div>
-            <label for='repeat-password'>
-              <i class='fa-solid fa-key fa-fw'></i>
-              Repeat password
-            </label>
-            <input
-              autocomplete='current-password'
-              id='repeat-password'
-              maxlength='32'
-              minlength='8'
-              name='repeat-password'
-              pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?|^*_=+-]).{8,32}$'
-              required
-              type='password'>
-
-            <p id='error'>
-              <i class='fa-solid fa-face-rolling-eyes fa-fw'></i>
-              Passwords don't match!
-            </p>
-          </div>
-        </section>
-
-        <section id='action'>
-          <input id='submit' type='submit' value='Sacrifice'>
-          <div>
-            <p>Already offered a sacrifice?</p>
-            <a>Redeem</a>
-          </div>
-        </section>
-      </form>
-
-      <footer>
+    <form>
+      <section id='content'>
         <div>
-          © 2023 - 2025
-          <a href='https://github.com/eldarlrd/web-design/tree/main/top'
-             rel='noreferrer external author' target='_blank'
-             title='Source' type='text/html'>
-            <i class='fa-solid fa-skull fa-xs'></i> eldarlrd
-          </a>
+          <label for='name'>
+            <i class='fa-solid fa-user fa-fw'></i>
+            Name
+          </label>
+          <input
+            id='name'
+            maxlength='32'
+            minlength='4'
+            name='name'
+            pattern='[a-zA-Z]+'
+            required
+            type='text'>
         </div>
-      </footer>
-    </main>
+
+        <div>
+          <label for='phone'>
+            <i class='fa-solid fa-phone fa-fw'></i>
+            Phone
+          </label>
+          <input
+            id='phone'
+            maxlength='18'
+            minlength='9'
+            name='phone'
+            pattern='^(\+?\d{1,3}\s?)?(\(\d{2,3}\)|\d{2,3})[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$'
+            required
+            type='tel'>
+        </div>
+
+        <div>
+          <label for='password'>
+            <i class='fa-solid fa-key fa-fw'></i>
+            Password
+          </label>
+          <input
+            autocomplete='current-password'
+            id='password'
+            maxlength='32'
+            minlength='8'
+            name='password'
+            pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?|^*_=+-]).{8,32}$'
+            required
+            type='password'>
+        </div>
+
+        <div>
+          <label for='repeat-password'>
+            <i class='fa-solid fa-key fa-fw'></i>
+            Repeat password
+          </label>
+          <input
+            autocomplete='current-password'
+            id='repeat-password'
+            maxlength='32'
+            minlength='8'
+            name='repeat-password'
+            pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?|^*_=+-]).{8,32}$'
+            required
+            type='password'>
+
+          <p id='error'>
+            <i class='fa-solid fa-face-rolling-eyes fa-fw'></i>
+            Passwords don't match!
+          </p>
+        </div>
+      </section>
+
+      <section id='action'>
+        <input id='submit' type='submit' value='Sacrifice'>
+        <div>
+          <p>Already offered a sacrifice?</p>
+          <a>Redeem</a>
+        </div>
+      </section>
+    </form>
+
+    <footer>
+      <div>
+        © 2023 - 2025
+        <a href='https://github.com/eldarlrd/web-design/tree/main/top'
+           rel='noreferrer external author' target='_blank'
+           title='Source' type='text/html'>
+          <i class='fa-solid fa-skull fa-xs'></i> eldarlrd
+        </a>
+      </div>
+    </footer>
+  </main>
 </body>
 
 <script>
