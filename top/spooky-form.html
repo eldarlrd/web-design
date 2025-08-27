@@ -93,57 +93,53 @@
             maxlength='32'
             minlength='8'
             name='password'
-            pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?|^*_=+-]).{8,32}$'
+            pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?*_=+^]).{8,32}$'
             required
             type='password'>
         </div>
 
         <div>
-          <label for='repeat-password'>
+          <label for='repeat'>
             <i class='fa-solid fa-key fa-fw'></i>
-            Repeat password
+            Repeat Password
           </label>
           <input
             autocomplete='current-password'
-            id='repeat-password'
+            id='repeat'
             maxlength='32'
             minlength='8'
-            name='repeat-password'
-            pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?|^*_=+-]).{8,32}$'
+            name='repeat'
+            pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&?*_=+^]).{8,32}$'
             required
             type='password'>
 
-          <p id='error'>
-            <i class='fa-solid fa-face-rolling-eyes fa-fw'></i>
+          <span id='error'>
+            <i class='fa-solid fa-face-grin-tongue-wink fa-fw'></i>
             Passwords don't match!
-          </p>
+          </span>
         </div>
       </section>
 
       <section id='action'>
         <input id='submit' type='submit' value='Sacrifice'>
-        <div>
-          <p>Already offered a sacrifice?</p>
-          <a>Redeem</a>
-        </div>
+          <span>Already offered a sacrifice?</span>
+          <a href='' rel='noreferrer' type='text/html'>Redeem</a>
       </section>
     </form>
 
     <footer>
-      <div>
         © 2023 - 2025
         <a href='https://github.com/eldarlrd/web-design/tree/main/top'
            rel='noreferrer external author' target='_blank'
            title='Source' type='text/html'>
           <i class='fa-solid fa-skull fa-xs'></i> eldarlrd
         </a>
-      </div>
     </footer>
   </main>
 </body>
 
 <script>
-  const password = document.getElementById('pass');
+  const password = document.getElementById('password');
   const repeat = document.getElementById('repeat');
   const error = document.getElementById('error');
   const submit = document.getElementById('submit');
