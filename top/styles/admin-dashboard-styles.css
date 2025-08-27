@@ -1,17 +1,26 @@
+:root {
+  scrollbar-width: thin;
+}
+
+::selection {
+  background: var(--bs-primary);
+  color: var(--bs-white);
+}
+
 #projects-header {
   margin-left: -.5rem;
 }
 
 .card {
+  border-left: .5rem solid var(--bs-primary);
   width: auto;
-  border-left: .45rem solid #0D6EFD;
 }
 
 .subtext {
   font-size: .875em;
 }
 
-@media only screen and (min-width: 36rem) {
+@media (width >= 36rem) {
   .card {
     max-width: calc(50% - 1rem);
   }

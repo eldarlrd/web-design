@@ -4,32 +4,44 @@
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <meta name='description' content='An Admin Dashboard'>
-  <meta name='keywords' content='Admin, Dashboard'>
-  <meta name='author' content='eldarlrd'>
-  <link rel='icon' href='assets/favicons/admin.png'>
-  <link
-    rel='stylesheet'
-    href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css'
-    integrity='sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM'
-    crossorigin='anonymous'>
-  <link
-    rel='stylesheet'
-    href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css'>
-  <link rel='stylesheet' href='stylesheets/admin-dashboard-styles.css'>
+  <meta content='admin, dashboard, panel' name='keywords'>
+  <meta content='Eldar Pashazade' name='author'>
+  <meta content='#fff' name='theme-color'>
+
+  <meta content='website' property='og:type'>
+  <meta content='Admin Dashboard' property='og:title'>
+  <meta content='An Admin Dashboard' property='og:description'>
+  <meta content='https://eldarlrd.is-a.dev/top/admin-dashboard.html' property='og:url'>
+
+  <link crossorigin='anonymous' href='https://cdn.jsdelivr.net' rel='preconnect' type='text/html'>
+
+  <link as='style' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' integrity='sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB' onload="this.onload=null;this.rel='stylesheet'" rel='preload'
+        type='text/css'>
+  <link as='style' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css'
+        onload="this.onload=null;this.rel='stylesheet'" rel='preload' type='text/css'>
+
+  <link href='styles/admin-dashboard-styles.css' rel='stylesheet' type='text/css'>
+  <link href='assets/favicons/admin.png' rel='icon' sizes='512x512' type='image/png'>
+  <script crossorigin='anonymous' defer integrity='sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI'
+    src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js'
+    type='text/javascript'></script>
   <title>Admin Dashboard</title>
 </head>
 
 <body>
   <div class='d-flex flex-lg-row flex-column min-vh-100'>
-    <nav class='navbar border-bottom align-items-start'>
+    <nav class='navbar border-bottom align-items-start border-end'>
       <div class='navbar-expand-lg flex-lg-column container-fluid justify-content-start align-items-start gap-3'>
         <button class='navbar-toggler' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation'>
           <span class='navbar-toggler-icon'></span>
         </button>
+
         <h5 class='navbar-brand user-select-none mt-1 mx-lg-3'>
           <i class='bi bi-diagram-3-fill me-1'></i>
           Dashboard
         </h5>
+
         <div class='offcanvas offcanvas-start px-2' tabindex='-1' id='offcanvasNavbar' aria-labelledby='offcanvasNavbarLabel'>
           <div class='offcanvas-header'>
             <h5 class='offcanvas-title user-select-none' id='offcanvasNavbarLabel'>
@@ -38,6 +50,7 @@
             </h5>
             <button type='button' class='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>
           </div>
+
           <div class='offcanvas-body flex-lg-column'>
             <form class='d-flex mb-3' role='search'>
               <input class='form-control me-2' type='search' placeholder='Search' aria-label='Search'>
@@ -45,6 +58,7 @@
                 <i class='bi bi-search'></i>
               </button>
             </form>
+
             <ul class='navbar-nav justify-content-end flex-grow-1 flex-lg-column pe-3'>
               <li class='nav-item'>
                 <a class='nav-link fs-5' href='#'>
@@ -52,48 +66,56 @@
                   Home
                 </a>
               </li>
+
               <li class='nav-item'>
                 <a class='nav-link fs-5' href='#'>
                   <i class='bi bi-person-fill me-2'></i>
                   Profile
                 </a>
               </li>
+
               <li class='nav-item'>
                 <a class='nav-link fs-5' href='#'>
                   <i class='bi bi-chat-right-fill me-2'></i>
                   Messages
                 </a>
               </li>
+
               <li class='nav-item'>
                 <a class='nav-link fs-5' href='#'>
                   <i class='bi bi-clock-fill me-2'></i>
                   History
                 </a>
               </li>
+
               <li class='nav-item'>
                 <a class='nav-link fs-5' href='#'>
                   <i class='bi bi-file-earmark-fill me-2'></i>
                   Tasks
                 </a>
               </li>
+
               <li class='nav-item mb-5'>
                 <a class='nav-link fs-5' href='#'>
                   <i class='bi bi-people-fill me-2'></i>
                   Communities
                 </a>
               </li>
+
               <li class='nav-item'>
                 <a class='nav-link fs-5' href='#'>
                   <i class='bi bi-gear-fill me-2'></i>
                   Settings
                 </a>
               </li>
+
               <li class='nav-item'>
                 <a class='nav-link fs-5' href='#'>
                   <i class='bi bi-question-square-fill me-2'></i>
                   Support
                 </a>
               </li>
+
               <li class='nav-item'>
                 <a class='nav-link fs-5' href='#'>
                   <i class='bi bi-shield-fill-check me-2'></i>
@@ -109,19 +131,23 @@
     <div class='w-100 bg-light'>
       <header class='d-flex flex-column flex-md-row-reverse justify-content-sm-between align-items-center gap-3 bg-primary px-4 py-3'>
         <section class='d-flex justify-content-center justify-content-sm-end align-items-center gap-3 fs-5'>
-          <a href='#' title='Notifications' class='link-light'><i class='bi bi-bell'></i></a>
-          <img
-            width='42'
-            height='42'
-            class='rounded-circle text-white border'
-            src='https://avatars.githubusercontent.com/u/95304986?v=4'
-            alt='GitHub Profile Avatar'
-          >
-          <span class='text-white user-select-none'>
-            Eldar Pashazade
-          </span>
+          <a class='link-body-emphasis' data-bs-theme='dark' href='#'
+             title='Notifications'><i class='bi bi-bell'></i></a>
+
+          <a class='gap-2 d-flex align-items-center link-body-emphasis link-underline-opacity-0' data-bs-theme='dark' href='https://github.com/eldarlrd' rel='noreferrer external author'
+             target='_blank' title='GitHub Profile'>
+            <img
+              alt='GitHub Profile Avatar'
+              class='rounded-circle text-white border'
+              data-bs-theme='light'
+              height='42'
+              src='https://github.com/eldarlrd.png'
+              width='42'>
+            <span class='user-select-none'>@eldarlrd</span>
+          </a>
         </section>
-        <section class='d-flex align-items-center justify-content-center gap-2'>
+
+        <section class='d-flex align-items-center justify-content-center gap-3'>
           <button class='d-flex px-3 py-2 align-items-center justify-content-center rounded-pill btn btn-outline-light'>
             <strong>New</strong>
           </button>
@@ -136,9 +162,8 @@
 
       <div class='row m-3'>
         <div class='col-xl-8'>
-          <strong id='projects-header' class='fs-4'>
-            Your Projects
-          </strong>
+          <strong class='fs-4' id='projects-header'>Your Projects</strong>
+
           <div class='row grid gap-3 my-3'>
             <div class='card shadow-sm rounded-3'>
               <div class='card-body'>
@@ -148,8 +173,9 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
+
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
+                  <a class='link-danger fs-4' href='#' title='Delete'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
                     <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
@@ -166,8 +192,9 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
+
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
+                  <a class='link-danger fs-4' href='#' title='Delete'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
                     <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
@@ -184,8 +211,9 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
+
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
+                  <a class='link-danger fs-4' href='#' title='Delete'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
                     <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
@@ -202,8 +230,9 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
+
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
+                  <a class='link-danger fs-4' href='#' title='Delete'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
                     <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
@@ -220,8 +249,9 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
+
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
+                  <a class='link-danger fs-4' href='#' title='Delete'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
                     <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
@@ -238,8 +268,9 @@
                   The description of the project would go here.
                   Below are the different actions one could take.
                 </p>
+
                 <span class='d-flex align-items-center justify-content-between gap-4 fs-4'>
-                  <a href='#' title='Remove' class='link-danger fs-4'><i class='bi bi-trash3'></i></a>
+                  <a class='link-danger fs-4' href='#' title='Delete'><i class='bi bi-trash3'></i></a>
                   <span class='d-flex gap-4'>
                     <a href='#' title='Favorite'><i class='bi bi-star'></i></a>
                     <a href='#' title='Expand'><i class='bi bi-arrows-angle-expand'></i></a>
@@ -252,9 +283,8 @@
 
         <div class='col-xl-4'>
           <div>
-            <strong class='fs-4'>
-              Announcements
-            </strong>
+            <strong class='fs-4'>Announcements</strong>
+
             <ul class='list-group my-3 shadow-sm rounded-3'>
               <li class='list-group-item py-3'>
                 <h6>Incoming Additions</h6>
@@ -264,6 +294,7 @@
                   and their respective summaries.
                 </span>
               </li>
+
               <li class='list-group-item py-3'>
                 <h6>Updated Policy</h6>
                 <span class='subtext'>
@@ -272,6 +303,7 @@
                   and their respective summaries.
                 </span>
               </li>
+
               <li class='list-group-item py-3'>
                 <h6>Latest Tasks</h6>
                 <span class='subtext'>
@@ -283,71 +315,72 @@
             </ul>
           </div>
 
-
           <div>
-            <strong class='fs-4'>
-              Trending
-            </strong>
+            <strong class='fs-4'>Trending</strong>
+
             <ul class='list-group my-3 shadow-sm rounded-3 border'>
               <li class='list-group-item py-3 border-0 d-flex gap-3'>
-                <img
-                  width='42'
-                  height='42'
-                  class='rounded-circle text-white border'
-                  src='https://avatars.githubusercontent.com/u/87971131?v=4?v=4'
-                  alt='GitHub Profile Avatar'
-                >
-                <span>
-                  <h6 class='mb-0'>@elnurxo</h6>
-                  <span class='subtext ms-1'>
-                    Front End Instructor
+                <a class='gap-2 d-flex align-items-center link-body-emphasis link-underline-opacity-0' href='https://github.com/elnurxo' rel='noreferrer external' target='_blank'
+                   title='GitHub Profile'>
+                  <img
+                    alt='GitHub Avatar'
+                    class='rounded-circle text-white border'
+                    height='42'
+                    src='https://github.com/elnurxo.png'
+                    width='42'>
+                  <span>
+                    <h6 class='mb-0'>@elnurxo</h6>
+                    <span class='subtext ms-1'>Frontend Instructor</span>
                   </span>
-                </span>
+                </a>
               </li>
+
               <li class='list-group-item py-3 border-0 d-flex gap-3'>
-                <img
-                  width='42'
-                  height='42'
-                  class='rounded-circle text-white border'
-                  src='https://avatars.githubusercontent.com/u/60513066?v=4'
-                  alt='GitHub Profile Avatar'
-                >
-                <span>
-                  <h6 class='mb-0'>@nasirmovlamov</h6>
-                  <span class='subtext ms-1'>
-                    Full Stack Developer
+                <a class='gap-2 d-flex align-items-center link-body-emphasis link-underline-opacity-0' href='https://github.com/turalshkrov' rel='noreferrer external' target='_blank'
+                   title='GitHub Profile'>
+                  <img
+                    alt='GitHub Avatar'
+                    class='rounded-circle text-white border'
+                    height='42'
+                    src='https://github.com/turalshkrov.png'
+                    width='42'>
+                  <span>
+                    <h6 class='mb-0'>@turalshkrov</h6>
+                    <span class='subtext ms-1'>Frontend Developer</span>
                   </span>
-                </span>
+                </a>
               </li>
+
               <li class='list-group-item py-3 border-0 d-flex gap-3'>
-                <img
-                  width='42'
-                  height='42'
-                  class='rounded-circle text-white border'
-                  src='https://avatars.githubusercontent.com/u/75661562?v=4'
-                  alt='GitHub Profile Avatar'
-                >
-                <span>
-                  <h6 class='mb-0'>@turalshkrov</h6>
-                  <span class='subtext ms-1'>
-                    Front End Developer
+                <a class='gap-2 d-flex align-items-center link-body-emphasis link-underline-opacity-0' href='https://github.com/nasirmovlamov' rel='noreferrer external' target='_blank'
+                   title='GitHub Profile'>
+                  <img
+                    alt='GitHub Avatar'
+                    class='rounded-circle text-white border'
+                    height='42'
+                    src='https://github.com/nasirmovlamov.png'
+                    width='42'>
+                  <span>
+                    <h6 class='mb-0'>@nasirmovlamov</h6>
+                    <span class='subtext ms-1'>Fullstack Developer</span>
                   </span>
-                </span>
+                </a>
               </li>
+
               <li class='list-group-item py-3 border-0 d-flex gap-3'>
-                <img
-                  width='42'
-                  height='42'
-                  class='rounded-circle text-white border'
-                  src='https://avatars.githubusercontent.com/u/66476643?v=4'
-                  alt='GitHub Profile Avatar'
-                >
-                <span>
-                  <h6 class='mb-0'>@mammadyahyayev</h6>
-                  <span class='subtext ms-1'>
-                    Back End Developer
+                <a class='gap-2 d-flex align-items-center link-body-emphasis link-underline-opacity-0' href='https://github.com/mammadyahyayev' rel='noreferrer external' target='_blank'
+                   title='GitHub Profile'>
+                  <img
+                    alt='GitHub Avatar'
+                    class='rounded-circle text-white border'
+                    height='42'
+                    src='https://github.com/mammadyahyayev.png'
+                    width='42'>
+                  <span>
+                    <h6 class='mb-0'>@mammadyahyayev</h6>
+                    <span class='subtext ms-1'>Backend Developer</span>
                   </span>
-                </span>
+                </a>
               </li>
             </ul>
           </div>
@@ -356,9 +389,4 @@
     </div>
   </div>
 </body>
-
-<script
-    src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'
-    integrity='sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz'
-    crossorigin='anonymous'></script>
 </html>
